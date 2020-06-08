@@ -98,6 +98,20 @@ main{
                     }
                 }
             }
+            .social-icon{
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                margin-right: 1em;
+                text-align: center;
+                border-radius: 5px;
+                background-color: #fff;
+                font-size: 24px;
+                a{
+                    color: $pizza-red;
+                }
+            }
         }
         iframe{
             width: 100%;
