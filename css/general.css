@@ -30,7 +30,7 @@ body {
 }
 
 main {
-  height: 1200px;
+  min-height: 600px;
 }
 
 /*Footer*/
@@ -187,10 +187,16 @@ main {
 /*Hacer reglas descendentes si es necesario*/
 @media (max-width: 576px) {
   #layout-header.bg-dark {
-    background-size: 500px 80px !important;
+    background-size: 576px 80px !important;
   }
 }
 @media (min-width: 768px) {
+  #layout-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
   .md-only {
     display: none;
   }
