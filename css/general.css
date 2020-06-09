@@ -7,8 +7,12 @@ body {
 }
 
 /*Header*/
+#layout-header {
+  min-height: 80px;
+}
 #layout-header.bg-dark {
   background: url("../img/navbar-bg.png") !important;
+  background-size: 130% 100% !important;
 }
 #layout-header .navbar-brand img {
   width: 200px;
@@ -54,7 +58,7 @@ main {
   padding: 10px 20px;
   text-align: center;
   background-color: #fff;
-  min-height: 275px;
+  min-height: 270px;
 }
 #layout-footer #info-caract .footer-card img {
   margin: 10px 0;
@@ -185,11 +189,6 @@ main {
 /*SOLO USAR LOS BREAKPOINTS DE BOOTSTRAP*/
 /*Son reglas ascendentes (aplican a partir de este punto)*/
 /*Hacer reglas descendentes si es necesario*/
-@media (max-width: 576px) {
-  #layout-header.bg-dark {
-    background-size: 576px 80px !important;
-  }
-}
 @media (min-width: 768px) {
   #layout-header {
     position: sticky;
@@ -203,20 +202,25 @@ main {
 }
 @media (max-width: 768px) {
   #info-caract {
+    height: auto;
     background-size: cover !important;
+  }
+  #info-caract .footer-card {
+    min-height: 290px !important;
+  }
+}
+@media (min-width: 992px) {
+  #info-caract .footer-card {
+    min-height: 350px !important;
   }
 }
 @media (min-width: 1200px) {
-  #layout-header.bg-dark {
-    background-size: 1600px 80px !important;
+  #info-caract .footer-card {
+    min-height: 290px !important;
   }
 }
 /*FULL HD devices*/
 @media (min-width: 1400px) {
-  #layout-header.bg-dark {
-    background-size: auto !important;
-  }
-
   #info-caract {
     background-size: cover !important;
   }

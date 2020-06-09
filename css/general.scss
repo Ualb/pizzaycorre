@@ -17,8 +17,11 @@ body {
 
 /*Header*/
 #layout-header {
+    min-height: 80px;
+
     &.bg-dark {
         background: url("../img/navbar-bg.png") !important;
+        background-size: 130% 100% !important;
     }
 
     .navbar-brand img {
@@ -40,6 +43,7 @@ body {
         .nav-icon {
             font-size: 18px;
             margin-right: 1em;
+
             &:hover {
                 color: $pizza-red;
             }
@@ -74,7 +78,7 @@ main {
             padding: 10px 20px;
             text-align: center;
             background-color: #fff;
-            min-height: 275px;
+            min-height: 270px;
 
             img {
                 margin: 10px 0;
@@ -227,7 +231,8 @@ main {
         }
 
     }
-    #footer-copy{
+
+    #footer-copy {
         padding: 0 10%;
         text-align: center;
     }
@@ -241,50 +246,56 @@ main {
 /*Hacer reglas descendentes si es necesario*/
 
 // Extra small devices (phones, PDA's , less than 576px)
-@media (max-width: 576px) {
-    #layout-header.bg-dark {
-        background-size: 576px 80px !important;
-    }
-}
+@media (max-width: 576px) {}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    #layout-header{
+    #layout-header {
         position: sticky;
         top: 0;
         z-index: 999;
     }
 
-    .md-only{
+    .md-only {
         display: none;
     }
 }
 
 @media (max-width: 768px) {
-    #info-caract{
+    #info-caract {
+        height: auto;
         background-size: cover !important;
+
+        .footer-card {
+            min-height: 290px !important;
+        }
     }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    #info-caract .footer-card {
+        min-height: 350px !important;
+    }
+}
+
+@media (max-width: 992px) {}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-    #layout-header.bg-dark {
-        background-size: 1600px 80px !important;
+    #info-caract {
+        .footer-card {
+            min-height: 290px !important;
+        }
     }
 }
 
 /*FULL HD devices*/
-@media(min-width: 1400px){
-    #layout-header.bg-dark {
-        background-size: auto !important;
-    }
-    #info-caract{
+@media(min-width: 1400px) {
+    #info-caract {
         background-size: cover !important;
     }
 }
