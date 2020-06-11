@@ -53,7 +53,68 @@
 
     <!--Principal-->
     <main>
+        <!-- div de la barra de buscar -->
+        <div class="form-search container"> 
+            <div class="search">
+                <input type="text" class="search__input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>             
+        </div>
 
+        <!-- div de la barra de rutas o flujos -->
+        <div class="route-path container">
+            <a href="#">Inicio</a>
+            <span>> Carro</span>
+        </div>
+
+        <!-- lista de productos en el carro -->
+        <div class="car-list">
+            <div class="car-list__product">
+                <div class="car-list_product__img-product">
+                    <img src="../../../img/pizza.svg" alt="Un delicioso alimento">
+                </div>
+                <div class="car-list_product__detail-product">
+                    <h2>Pizza de Pepperoni</h2>
+                    <span>Tamaño: 12"</span>
+                    <div class="car-list_product__detail-product__cst-amount">
+                        <h4>$5.00</h4>
+                        <div class="amount">
+                            <span>Cantidad</span>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="car-list_product__delete-product">
+                    <button type="button" class="btn btn-link">
+                        <i class="far fa-trash-alt"></i>Remover</button>
+                </div>
+            </div>
+            <div class="buy-or-continue">
+                <a href="#">Continuar Comprando</a>
+                <a class="btn btn-dark" href="#">Pagar</a>
+            </div>
+        </div>
+
+        <!-- cada uno de los costos de los productos seleccionados -->
+        <div class="datail-list">
+            <div class="detail-list__title-detail">
+                <h1>Detalle del precio</h1>
+            </div>
+            <div class="detail-list__product-cost">
+                <span>Pricio (2 Productos)</span>
+                <span>$10.99</span>
+            </div>
+            <div class="detail-list__shipping-cost">
+                <span>Costo de Envío</span>
+                <span>$2.50</span>
+            </div>
+            <div class="detail-list__total-cost">
+                <span>Monto a Pagar</span>
+                <span>$13.49</span>
+            </div>
+        </div>
     </main>
 
     <!--Footer-->
