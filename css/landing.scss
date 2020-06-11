@@ -1,0 +1,92 @@
+@font-face{
+    font-family: 'AvengeanceAvenger';
+    src: url('../font/avenger.otf') format('opentype'),
+        url('../font/avenger.ttf') format('truetype');
+    font-style: normal;
+}
+
+/*Pallete*/
+$pizza-red: #A80E0E;
+$mustard: #FFAA00;
+$lg-mustard: #F9B826;
+$black: #281923;
+$lg-black: #343232;
+$enf-gray: #707070;
+
+$opac-blak: rgba(0 ,0 ,0 ,0.55 );
+
+$animation1ms: all .1s;
+
+/**/
+#layout-header{
+    position: fixed;
+    width: 100%;
+    &.bg-dark{
+    background: none !important;
+    background-color: $opac-blak !important;
+    }
+    .navbar-brand{
+        width: 20%;
+    }
+}
+
+.img-hr{
+    margin: 1em 0;
+}
+
+main{
+    #banner{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        #promo-link{
+            margin-bottom: 2em;
+            img{
+                width: 100%;
+            }
+        }
+        margin-bottom: 3em;
+    }
+    #menu-query{
+        padding: 1em 2em;
+        text-align: center;
+        h1{
+            font-size: 46px;
+            font-family: 'AvengeanceAvenger', sans-serif;
+            letter-spacing: 2px;
+            color: $pizza-red;
+        }
+        h5{
+            font-size: 20px;
+            color: $black;
+            margin-bottom: 1em;
+        }
+        .row{
+            margin: 2em 0;
+            padding: 0 5%;
+        }
+        .pizza{
+            text-align: center;
+            img{
+                width: 70%;
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+            a{
+                text-decoration: none;
+            }
+            h3{
+                color: $black;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: $animation1ms;
+                cursor: pointer;
+                &:hover{
+                    color: $lg-mustard;
+                }
+            }
+        }
+    }
+}

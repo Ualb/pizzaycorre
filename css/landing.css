@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "AvengeanceAvenger";
+  src: url("../font/avenger.otf") format("opentype"), url("../font/avenger.ttf") format("truetype");
+  font-style: normal;
+}
+/*Pallete*/
+/**/
+#layout-header {
+  position: fixed;
+  width: 100%;
+}
+#layout-header.bg-dark {
+  background: none !important;
+  background-color: rgba(0, 0, 0, 0.55) !important;
+}
+#layout-header .navbar-brand {
+  width: 20%;
+}
+
+.img-hr {
+  margin: 1em 0;
+}
+
+main #banner {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+main #banner #promo-link {
+  margin-bottom: 2em;
+}
+main #banner #promo-link img {
+  width: 100%;
+}
+main #menu-query {
+  padding: 1em 2em;
+  text-align: center;
+}
+main #menu-query h1 {
+  font-size: 46px;
+  font-family: "AvengeanceAvenger", sans-serif;
+  letter-spacing: 2px;
+  color: #A80E0E;
+}
+main #menu-query h5 {
+  font-size: 20px;
+  color: #281923;
+  margin-bottom: 1em;
+}
+main #menu-query .row {
+  margin: 2em 0;
+  padding: 0 5%;
+}
+main #menu-query .pizza {
+  text-align: center;
+}
+main #menu-query .pizza img {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+main #menu-query .pizza a {
+  text-decoration: none;
+}
+main #menu-query .pizza h3 {
+  color: #281923;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+main #menu-query .pizza h3:hover {
+  color: #F9B826;
+}
+
+/*# sourceMappingURL=landing.css.map */
