@@ -1,0 +1,86 @@
+.form-search {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.form-search .search {
+  display: flex;
+  margin-right: 0;
+  height: 35px;
+  border: 1px solid #dfdfdf;
+}
+.form-search .search input {
+  width: 450px;
+  height: 29px;
+  border: none;
+  padding-left: 10px;
+}
+.form-search .search input:hover {
+  border: none;
+  height: 29px;
+}
+.form-search .search input:focus {
+  outline: none;
+}
+.form-search .search button {
+  width: 40px;
+  height: 29px;
+  background: white;
+  border: none;
+}
+.form-search .search button:hover {
+  border: none;
+  height: 29px;
+}
+.form-search .search button:focus {
+  outline: none;
+}
+
+.route-path {
+  background: #f3f3f3;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.route-path a {
+  text-decoration: none;
+  color: black;
+}
+.route-path a:hover {
+  color: #f9b826;
+}
+.route-path a:active {
+  color: #281923;
+}
+
+.car {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.car-list {
+  border: 1px solid #e3e3e3;
+  padding-bottom: 10px;
+}
+.car-list .car-list__product li {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+  margin-right: 15px;
+}
+.car-list .car-list__product li .car-list_product__detail-product {
+  border: 1px solid blue;
+}
+.car-list .car-list__product li .car-list_product__detail-product__cst-amount {
+  display: flex;
+  border: 1px solid black;
+}
+.car-list .car-list__product li .car-list_product__img-product {
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=car.css.map */
