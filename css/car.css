@@ -1,3 +1,7 @@
+main {
+  box-sizing: border-box;
+}
+
 .form-search {
   padding-top: 50px;
   padding-bottom: 30px;
@@ -72,15 +76,128 @@
   padding-bottom: 25px;
   margin-right: 15px;
 }
-.car-list .car-list__product li .car-list_product__detail-product {
-  border: 1px solid blue;
-}
-.car-list .car-list__product li .car-list_product__detail-product__cst-amount {
-  display: flex;
-  border: 1px solid black;
-}
 .car-list .car-list__product li .car-list_product__img-product {
-  border: 1px solid red;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.car-list .car-list__product li .car-list_product__img-product img {
+  border: 1px solid #e3e3e3;
+  margin: 0;
+  padding: 0;
+}
+.car-list .car-list__product li .car-list_product__detail-product h2 {
+  margin-bottom: 15px;
+  font-weight: 550;
+  font-size: 19px;
+}
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount h4 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount div {
+  display: flex;
+}
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount div .amount-product {
+  margin-left: 45px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+}
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount div input {
+  border: 1px solid #e3e3e3;
+  width: 80px;
+  height: 33px;
+  padding-left: 5px;
+}
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount div input:hover {
+  border: none;
+}
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount div input:focus {
+  border: none;
+}
+.car-list .car-list__product li .car-list_product__detail-product .shopping-time {
+  font-size: 14px;
+  font-weight: 600;
+  color: #529e34;
+}
+.car-list .car-list__product li .car-list_product__delete-product {
+  width: auto;
+  text-align: right;
+}
+.car-list .car-list__product li .btn {
+  color: black;
+}
+.car-list .car-list__product li .btn:hover {
+  text-decoration: none;
+  outline: none;
+  color: #a80e0e;
+}
+.car-list .car-list__product li .btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+.car-list .buy-or-continue {
+  width: auto;
+  text-align: right;
+  align-items: center;
+}
+.car-list .buy-or-continue a {
+  padding-top: 10px;
+  margin-left: 8px;
+}
+.car-list .buy-or-continue a:hover {
+  outline: none;
+  text-decoration: none;
+}
+.car-list .buy-or-continue .buy {
+  width: 120px;
+  height: 45px;
+}
+
+.detail-list {
+  width: auto;
+}
+@media only screen and (max-width: 999px) {
+  .detail-list {
+    margin-top: 25px;
+  }
+}
+.detail-list .detail-list__title-detail {
+  width: auto;
+  border: 1px solid #506bfa;
+  color: white;
+  background: #506bfa;
+  padding: 20px 0 20px 20px;
+}
+.detail-list .detail-list__title-detail h3 {
+  font-weight: 500;
+}
+.detail-list .detail-list__product-cost, .detail-list .detail-list__total-cost, .detail-list .detail-list__shipping-cost {
+  border-width: 0 1px 1px;
+  border-style: solid;
+  border-color: #e3e3e3;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  width: auto;
+}
+.detail-list .detail-list__product-cost .black-span, .detail-list .detail-list__total-cost .black-span, .detail-list .detail-list__shipping-cost .black-span {
+  font-weight: 600;
+}
+.detail-list .detail-list__product-cost .left, .detail-list .detail-list__total-cost .left, .detail-list .detail-list__shipping-cost .left {
+  width: 100%;
+}
+.detail-list .detail-list__product-cost .right, .detail-list .detail-list__total-cost .right, .detail-list .detail-list__shipping-cost .right {
+  width: 100%;
+  text-align: right;
 }
 
 /*# sourceMappingURL=car.css.map */
