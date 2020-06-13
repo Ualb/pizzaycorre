@@ -30,11 +30,32 @@ $animation1ms: all .1s;
     }
 }
 
-.img-hr{
-    margin: 1em 0;
-}
+
 
 main{
+
+    .section-title{
+        width: 100%;
+        text-align: center;
+        h1, h2{
+            font-size: 38px;
+            font-family: 'AvengeanceAvenger', sans-serif;
+            letter-spacing: 2px;
+            color: $pizza-red;
+        }
+        h1{
+            font-size: 46px;
+        }
+        .img-hr{
+            margin: 1em auto;
+        }
+        h5{
+            font-size: 20px;
+            color: $black;
+            margin-bottom: 1em;
+        }
+    }
+    
     #banner{
         display: block;
         width: 100%;
@@ -48,19 +69,7 @@ main{
         margin-bottom: 3em;
     }
     #menu-query{
-        padding: 1em 2em;
-        text-align: center;
-        h1{
-            font-size: 46px;
-            font-family: 'AvengeanceAvenger', sans-serif;
-            letter-spacing: 2px;
-            color: $pizza-red;
-        }
-        h5{
-            font-size: 20px;
-            color: $black;
-            margin-bottom: 1em;
-        }
+        padding: 1em 2em;   
         .row{
             margin: 2em 0;
             padding: 0 5%;
@@ -85,6 +94,56 @@ main{
                 cursor: pointer;
                 &:hover{
                     color: $lg-mustard;
+                }
+            }
+        }
+    }
+    #delivery-fast{
+        margin: 3em 0;
+        img{
+            width: 100%;
+        }
+    }
+    #featured-products{
+        margin: 2em 0;
+        .card{
+            border-radius: 5px;
+            box-shadow: 1px 2px 2px #555;
+            .card-rating{
+                margin-bottom: 1em;
+                .fa-star{
+                    color: $lg-mustard;
+                    margin-right: 0.5em;
+                }
+            }
+            .card-title{
+                font-weight: 500;
+            }
+            .card-text{
+                font-weight: 300;
+                color: $enf-gray;
+            }
+            .card-end{
+                display: flex;
+                align-items: center;
+                .btn{
+                    border: none;
+                    background-color: $mustard;
+                    margin-right: 1em;
+                    padding: .5em 1.5em;
+                    border-radius: 75px;
+                    &:hover{
+                        box-shadow: 0px 0px 5px $opac-blak;
+                    }
+                    .fa-shopping-cart{
+                        margin-right: 1em;
+                    }
+                }
+                .card-price{
+                    margin: 0;
+                    font-family: 'AvengeanceAvenger';
+                    font-size: 18px;
+                    color: $pizza-red;
                 }
             }
         }

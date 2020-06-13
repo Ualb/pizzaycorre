@@ -17,10 +17,27 @@
   width: 20%;
 }
 
-.img-hr {
-  margin: 1em 0;
+main .section-title {
+  width: 100%;
+  text-align: center;
 }
-
+main .section-title h1, main .section-title h2 {
+  font-size: 38px;
+  font-family: "AvengeanceAvenger", sans-serif;
+  letter-spacing: 2px;
+  color: #A80E0E;
+}
+main .section-title h1 {
+  font-size: 46px;
+}
+main .section-title .img-hr {
+  margin: 1em auto;
+}
+main .section-title h5 {
+  font-size: 20px;
+  color: #281923;
+  margin-bottom: 1em;
+}
 main #banner {
   display: block;
   width: 100%;
@@ -35,18 +52,6 @@ main #banner #promo-link img {
 }
 main #menu-query {
   padding: 1em 2em;
-  text-align: center;
-}
-main #menu-query h1 {
-  font-size: 46px;
-  font-family: "AvengeanceAvenger", sans-serif;
-  letter-spacing: 2px;
-  color: #A80E0E;
-}
-main #menu-query h5 {
-  font-size: 20px;
-  color: #281923;
-  margin-bottom: 1em;
 }
 main #menu-query .row {
   margin: 2em 0;
@@ -74,6 +79,56 @@ main #menu-query .pizza h3 {
 }
 main #menu-query .pizza h3:hover {
   color: #F9B826;
+}
+main #delivery-fast {
+  margin: 3em 0;
+}
+main #delivery-fast img {
+  width: 100%;
+}
+main #featured-products {
+  margin: 2em 0;
+}
+main #featured-products .card {
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px #555;
+}
+main #featured-products .card .card-rating {
+  margin-bottom: 1em;
+}
+main #featured-products .card .card-rating .fa-star {
+  color: #F9B826;
+  margin-right: 0.5em;
+}
+main #featured-products .card .card-title {
+  font-weight: 500;
+}
+main #featured-products .card .card-text {
+  font-weight: 300;
+  color: #707070;
+}
+main #featured-products .card .card-end {
+  display: flex;
+  align-items: center;
+}
+main #featured-products .card .card-end .btn {
+  border: none;
+  background-color: #FFAA00;
+  margin-right: 1em;
+  padding: 0.5em 1.5em;
+  border-radius: 75px;
+}
+main #featured-products .card .card-end .btn:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.55);
+}
+main #featured-products .card .card-end .btn .fa-shopping-cart {
+  margin-right: 1em;
+}
+main #featured-products .card .card-end .card-price {
+  margin: 0;
+  font-family: "AvengeanceAvenger";
+  font-size: 18px;
+  color: #A80E0E;
 }
 
 /*# sourceMappingURL=landing.css.map */
