@@ -28,6 +28,7 @@ body{
 /**/
 #layout-header{
     position: fixed;
+    z-index: 999;
     width: 100%;
     &.bg-dark{
     background: none !important;
@@ -190,6 +191,82 @@ main{
                 }
             }
             
+        }
+    }
+    #recomendations{
+        margin-bottom: 3em;
+        .row{
+            padding: 0 7%;
+            #images-container{
+                position: relative;
+                margin: 0 auto;
+                min-height: 400px;
+                width: 100%;
+                .img-decoration{
+                    background-color: $pizza-red;
+                    width: 40%;
+                    padding-top: 40%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+                .img-main{
+                    width: 80%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 2;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .description{
+                height: auto;
+                padding: 1em 0;
+                align-self: center;
+                .fa-quote-left{
+                    font-size: 46px;
+                    margin-bottom: .5em;
+                    color: $pizza-red;
+                }
+                &>p{
+                    font-weight: 500;
+                    color: $black;
+                    line-height: 30px;
+                    text-align: justify;
+                }
+                .person{
+                    margin-top: 2em;
+                    .person-name{
+                        font-size: 26px;
+                        margin-bottom: 0;
+                    }
+                    .person-description{
+                        font-size: 16px;
+                    }
+                }
+                ul#description-spin-index{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        display: inline-block;
+                        margin-right: .5em;
+                        button{
+                            width: 25px;
+                            padding-top: 10px;
+                            background-color: $enf-gray;
+                            border-radius: 20px;
+                            border: none;
+                            outline: none;
+                        }
+                        &.spin-active button{
+                            width: 50px;
+                            background-color: $mustard;
+                        }
+                    }
+                }
+            }
         }
     }
 }

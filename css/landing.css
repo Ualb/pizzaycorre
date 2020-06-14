@@ -15,6 +15,7 @@ body {
 /**/
 #layout-header {
   position: fixed;
+  z-index: 999;
   width: 100%;
 }
 #layout-header.bg-dark {
@@ -171,6 +172,82 @@ main #timer-body .timer-sect .timer-number {
   width: 70px;
   height: 70px;
   line-height: 70px;
+  background-color: #FFAA00;
+}
+main #recomendations {
+  margin-bottom: 3em;
+}
+main #recomendations .row {
+  padding: 0 7%;
+}
+main #recomendations .row #images-container {
+  position: relative;
+  margin: 0 auto;
+  min-height: 400px;
+  width: 100%;
+}
+main #recomendations .row #images-container .img-decoration {
+  background-color: #A80E0E;
+  width: 40%;
+  padding-top: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+main #recomendations .row #images-container .img-main {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+main #recomendations .row #images-container img {
+  width: 100%;
+}
+main #recomendations .row .description {
+  height: auto;
+  padding: 1em 0;
+  align-self: center;
+}
+main #recomendations .row .description .fa-quote-left {
+  font-size: 46px;
+  margin-bottom: 0.5em;
+  color: #A80E0E;
+}
+main #recomendations .row .description > p {
+  font-weight: 500;
+  color: #281923;
+  line-height: 30px;
+  text-align: justify;
+}
+main #recomendations .row .description .person {
+  margin-top: 2em;
+}
+main #recomendations .row .description .person .person-name {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+main #recomendations .row .description .person .person-description {
+  font-size: 16px;
+}
+main #recomendations .row .description ul#description-spin-index {
+  list-style: none;
+  padding: 0;
+}
+main #recomendations .row .description ul#description-spin-index li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+main #recomendations .row .description ul#description-spin-index li button {
+  width: 25px;
+  padding-top: 10px;
+  background-color: #707070;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+main #recomendations .row .description ul#description-spin-index li.spin-active button {
+  width: 50px;
   background-color: #FFAA00;
 }
 
