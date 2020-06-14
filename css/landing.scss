@@ -17,6 +17,14 @@ $opac-blak: rgba(0 ,0 ,0 ,0.55 );
 
 $animation1ms: all .1s;
 
+.text-red{
+    color: $pizza-red !important;
+}
+
+body{
+    overflow-x: hidden;
+}
+
 /**/
 #layout-header{
     position: fixed;
@@ -146,6 +154,42 @@ main{
                     color: $pizza-red;
                 }
             }
+        }
+    }
+    #timer{
+        width: 100%;
+        background: url('../img/barra-timer.png');
+        background-size: cover;
+        margin-bottom: 3em;
+        color: #fff;
+        &-body{
+            padding: 15% 5%;
+            h3{
+                font-family: 'AvengeanceAvenger';
+                font-size: 48px;
+            }
+            p{
+                font-size: 20px;
+            }
+            &-cont{
+                width: 100%;
+            }
+            .timer-sect{
+                text-align: center;
+                display: inline-block;
+                font-family: 'AvengeanceAvenger';
+                padding-right: 1em;
+                .timer-number{
+                    display: block;
+                    margin: .5em auto;
+                    font-size: 36px;
+                    width: 70px;
+                    height: 70px;
+                    line-height: 70px;
+                    background-color: $mustard;
+                }
+            }
+            
         }
     }
 }

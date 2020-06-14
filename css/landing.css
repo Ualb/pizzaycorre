@@ -4,6 +4,14 @@
   font-style: normal;
 }
 /*Pallete*/
+.text-red {
+  color: #A80E0E !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 /**/
 #layout-header {
   position: fixed;
@@ -129,6 +137,41 @@ main #featured-products .card .card-end .card-price {
   font-family: "AvengeanceAvenger";
   font-size: 18px;
   color: #A80E0E;
+}
+main #timer {
+  width: 100%;
+  background: url("../img/barra-timer.png");
+  background-size: cover;
+  margin-bottom: 3em;
+  color: #fff;
+}
+main #timer-body {
+  padding: 15% 5%;
+}
+main #timer-body h3 {
+  font-family: "AvengeanceAvenger";
+  font-size: 48px;
+}
+main #timer-body p {
+  font-size: 20px;
+}
+main #timer-body-cont {
+  width: 100%;
+}
+main #timer-body .timer-sect {
+  text-align: center;
+  display: inline-block;
+  font-family: "AvengeanceAvenger";
+  padding-right: 1em;
+}
+main #timer-body .timer-sect .timer-number {
+  display: block;
+  margin: 0.5em auto;
+  font-size: 36px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background-color: #FFAA00;
 }
 
 /*# sourceMappingURL=landing.css.map */
