@@ -30,7 +30,8 @@ main .section-title {
   width: 100%;
   text-align: center;
 }
-main .section-title h1, main .section-title h2 {
+main .section-title h1,
+main .section-title h2 {
   font-size: 38px;
   font-family: "AvengeanceAvenger", sans-serif;
   letter-spacing: 2px;
@@ -146,6 +147,10 @@ main #timer {
   margin-bottom: 3em;
   color: #fff;
 }
+main #timer-cont {
+  display: flex;
+  width: 100%;
+}
 main #timer-body {
   padding: 15% 5%;
 }
@@ -156,12 +161,8 @@ main #timer-body h3 {
 main #timer-body p {
   font-size: 20px;
 }
-main #timer-body-cont {
-  width: 100%;
-}
 main #timer-body .timer-sect {
   text-align: center;
-  display: inline-block;
   font-family: "AvengeanceAvenger";
   padding-right: 1em;
 }
@@ -182,8 +183,10 @@ main #recomendations .row {
 }
 main #recomendations .row #images-container {
   position: relative;
-  margin: 0 auto;
-  min-height: 400px;
+  margin: auto auto;
+  max-width: 500px;
+  min-height: 410px;
+  height: 100%;
   width: 100%;
 }
 main #recomendations .row #images-container .img-decoration {
@@ -250,5 +253,50 @@ main #recomendations .row .description ul#description-spin-index li.spin-active 
   width: 50px;
   background-color: #FFAA00;
 }
+
+/*MEDIA QUERIES*/
+/*SOLO USAR LOS BREAKPOINTS DE BOOTSTRAP*/
+/*Son reglas ascendentes (aplican a partir de este punto)*/
+/*Hacer reglas descendentes si es necesario*/
+@media (max-width: 422px) {
+  #recomendations #images-container {
+    min-height: 300px !important;
+  }
+}
+@media (max-width: 576px) {
+  .section-title h1 {
+    font-size: 36px !important;
+  }
+  .section-title h2 {
+    font-size: 30px !important;
+  }
+  .section-title h5 {
+    font-size: 16px !important;
+  }
+  .section-title .img-hr {
+    width: 70%;
+  }
+
+  #banner #promo-link img {
+    width: 150% !important;
+  }
+
+  #timer h3 {
+    font-size: 30px !important;
+  }
+  #timer p {
+    font-size: 16px !important;
+  }
+  #timer .timer-sect .timer-number {
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 50px !important;
+    font-size: 24px !important;
+  }
+  #timer .timer-sect p {
+    font-size: 16px;
+  }
+}
+/*FULL HD devices*/
 
 /*# sourceMappingURL=landing.css.map */

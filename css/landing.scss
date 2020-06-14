@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: 'AvengeanceAvenger';
     src: url('../font/avenger.otf') format('opentype'),
         url('../font/avenger.ttf') format('truetype');
@@ -13,87 +13,103 @@ $black: #281923;
 $lg-black: #343232;
 $enf-gray: #707070;
 
-$opac-blak: rgba(0 ,0 ,0 ,0.55 );
+$opac-blak: rgba(0, 0, 0, 0.55);
 
 $animation1ms: all .1s;
 
-.text-red{
+.text-red {
     color: $pizza-red !important;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 /**/
-#layout-header{
+#layout-header {
     position: fixed;
     z-index: 999;
     width: 100%;
-    &.bg-dark{
-    background: none !important;
-    background-color: $opac-blak !important;
+
+    &.bg-dark {
+        background: none !important;
+        background-color: $opac-blak !important;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         width: 20%;
     }
 }
 
 
 
-main{
+main {
 
-    .section-title{
+    .section-title {
         width: 100%;
         text-align: center;
-        h1, h2{
+
+        h1,
+        h2 {
             font-size: 38px;
             font-family: 'AvengeanceAvenger', sans-serif;
             letter-spacing: 2px;
             color: $pizza-red;
         }
-        h1{
+
+        h1 {
             font-size: 46px;
         }
-        .img-hr{
+
+        .img-hr {
             margin: 1em auto;
         }
-        h5{
+
+        h5 {
             font-size: 20px;
             color: $black;
             margin-bottom: 1em;
         }
     }
-    
-    #banner{
+
+    #banner {
         display: block;
         width: 100%;
         overflow: hidden;
-        #promo-link{
+
+        #promo-link {
             margin-bottom: 2em;
-            img{
+
+            img {
                 width: 100%;
             }
         }
+
         margin-bottom: 3em;
     }
-    #menu-query{
-        padding: 1em 2em;   
-        .row{
+
+    #menu-query {
+        padding: 1em 2em;
+
+        .row {
             margin: 2em 0;
             padding: 0 5%;
         }
-        .pizza{
+
+        .pizza {
             text-align: center;
-            img{
+
+            img {
                 width: 70%;
                 margin: 0 auto;
                 margin-bottom: 15px;
             }
-            a{
+
+            a {
                 text-decoration: none;
             }
-            h3{
+
+            h3 {
                 color: $black;
                 font-size: 16px;
                 font-weight: 400;
@@ -101,54 +117,68 @@ main{
                 letter-spacing: 1px;
                 transition: $animation1ms;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     color: $lg-mustard;
                 }
             }
         }
     }
-    #delivery-fast{
+
+    #delivery-fast {
         margin: 3em 0;
-        img{
+
+        img {
             width: 100%;
         }
     }
-    #featured-products{
+
+    #featured-products {
         margin: 2em 0;
-        .card{
+
+        .card {
             border-radius: 5px;
             box-shadow: 1px 2px 2px #555;
-            .card-rating{
+
+            .card-rating {
                 margin-bottom: 1em;
-                .fa-star{
+
+                .fa-star {
                     color: $lg-mustard;
                     margin-right: 0.5em;
                 }
             }
-            .card-title{
+
+            .card-title {
                 font-weight: 500;
             }
-            .card-text{
+
+            .card-text {
                 font-weight: 300;
                 color: $enf-gray;
             }
-            .card-end{
+
+            .card-end {
                 display: flex;
                 align-items: center;
-                .btn{
+
+                .btn {
                     border: none;
                     background-color: $mustard;
                     margin-right: 1em;
                     padding: .5em 1.5em;
                     border-radius: 75px;
-                    &:hover{
+
+                    &:hover {
                         box-shadow: 0px 0px 5px $opac-blak;
                     }
-                    .fa-shopping-cart{
+
+                    .fa-shopping-cart {
                         margin-right: 1em;
                     }
                 }
-                .card-price{
+
+                .card-price {
                     margin: 0;
                     font-family: 'AvengeanceAvenger';
                     font-size: 18px;
@@ -157,30 +187,39 @@ main{
             }
         }
     }
-    #timer{
+
+    #timer {
         width: 100%;
         background: url('../img/barra-timer.png');
         background-size: cover;
         margin-bottom: 3em;
         color: #fff;
-        &-body{
+
+        &-cont {
+            display: flex;
+            width: 100%;
+        }
+
+        &-body {
             padding: 15% 5%;
-            h3{
+
+            h3 {
                 font-family: 'AvengeanceAvenger';
                 font-size: 48px;
             }
-            p{
+
+            p {
                 font-size: 20px;
             }
-            &-cont{
-                width: 100%;
-            }
-            .timer-sect{
+
+            
+
+            .timer-sect {
                 text-align: center;
-                display: inline-block;
                 font-family: 'AvengeanceAvenger';
                 padding-right: 1em;
-                .timer-number{
+
+                .timer-number {
                     display: block;
                     margin: .5em auto;
                     font-size: 36px;
@@ -190,19 +229,25 @@ main{
                     background-color: $mustard;
                 }
             }
-            
+
         }
     }
-    #recomendations{
+
+    #recomendations {
         margin-bottom: 3em;
-        .row{
+
+        .row {
             padding: 0 7%;
-            #images-container{
+
+            #images-container {
                 position: relative;
-                margin: 0 auto;
-                min-height: 400px;
+                margin: auto auto;
+                max-width: 500px;
+                min-height: 410px;
+                height: 100%;
                 width: 100%;
-                .img-decoration{
+
+                .img-decoration {
                     background-color: $pizza-red;
                     width: 40%;
                     padding-top: 40%;
@@ -210,49 +255,60 @@ main{
                     bottom: 0;
                     left: 0;
                 }
-                .img-main{
+
+                .img-main {
                     width: 80%;
                     position: absolute;
                     top: 0;
                     right: 0;
                     z-index: 2;
                 }
-                img{
+
+                img {
                     width: 100%;
                 }
             }
-            .description{
+
+            .description {
                 height: auto;
                 padding: 1em 0;
                 align-self: center;
-                .fa-quote-left{
+
+                .fa-quote-left {
                     font-size: 46px;
                     margin-bottom: .5em;
                     color: $pizza-red;
                 }
-                &>p{
+
+                &>p {
                     font-weight: 500;
                     color: $black;
                     line-height: 30px;
                     text-align: justify;
                 }
-                .person{
+
+                .person {
                     margin-top: 2em;
-                    .person-name{
+
+                    .person-name {
                         font-size: 26px;
                         margin-bottom: 0;
                     }
-                    .person-description{
+
+                    .person-description {
                         font-size: 16px;
                     }
                 }
-                ul#description-spin-index{
+
+                ul#description-spin-index {
                     list-style: none;
                     padding: 0;
-                    li{
+
+                    li {
                         display: inline-block;
                         margin-right: .5em;
-                        button{
+
+                        button {
                             width: 25px;
                             padding-top: 10px;
                             background-color: $enf-gray;
@@ -260,7 +316,8 @@ main{
                             border: none;
                             outline: none;
                         }
-                        &.spin-active button{
+
+                        &.spin-active button {
                             width: 50px;
                             background-color: $mustard;
                         }
@@ -270,3 +327,83 @@ main{
         }
     }
 }
+
+/*MEDIA QUERIES*/
+
+/*SOLO USAR LOS BREAKPOINTS DE BOOTSTRAP*/
+/*Son reglas ascendentes (aplican a partir de este punto)*/
+/*Hacer reglas descendentes si es necesario*/
+@media (max-width: 422px){
+    #recomendations{
+        #images-container{
+            min-height: 300px !important;
+        }
+    }
+}
+
+
+// Extra small devices (phones, PDA's , less than 576px)
+@media (max-width: 576px) {
+    .section-title {
+        h1{
+            font-size: 36px !important;
+        }
+        h2{
+            font-size: 30px !important;
+        }
+        h5{
+            font-size: 16px !important;
+        }
+        .img-hr {
+            width: 70%;
+        }
+    }
+
+    #banner {
+        #promo-link {
+            img {
+                width: 150% !important;
+            }
+        }
+    }
+
+    #timer {
+        h3{
+            font-size: 30px !important;
+        }
+        p{
+            font-size: 16px !important;
+        }
+        .timer-sect {
+            .timer-number {
+                width: 50px !important;
+                height: 50px !important;
+                line-height: 50px !important;
+                font-size: 24px !important;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+@media (max-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+@media (max-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+/*FULL HD devices*/
+@media(min-width: 1400px) {}
