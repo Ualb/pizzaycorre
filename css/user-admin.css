@@ -40,5 +40,33 @@ main #user-menu ul li.active a {
 main #user-menu ul li.active a:hover {
   color: #ccc;
 }
+main #user-main .order {
+  margin: 1em 0;
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+main #user-main .order .img-container {
+  width: 15%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #user-main .order .img-container img {
+  width: 70%;
+}
+main #user-main .order .order-details {
+  flex-basis: 80%;
+}
+main #user-main .order .order-details h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+main #user-main .order .order-details span {
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=user-admin.css.map */
