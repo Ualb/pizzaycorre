@@ -1,0 +1,44 @@
+main {
+  min-height: 300px;
+  margin: 1.5em 2em;
+}
+main #user-menu {
+  padding: 1.5em;
+}
+main #user-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-shadow: 1px 2px 5px #444;
+}
+main #user-menu ul li {
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  height: 50px;
+}
+main #user-menu ul li svg {
+  margin-right: 1em;
+}
+main #user-menu ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #343232;
+  transition: all 0.1s;
+}
+main #user-menu ul li a:hover {
+  color: #FFAA00;
+}
+main #user-menu ul li.active {
+  background-color: #506BFA;
+}
+main #user-menu ul li.active a {
+  color: #fff;
+}
+main #user-menu ul li.active a:hover {
+  color: #ccc;
+}
+
+/*# sourceMappingURL=user-admin.css.map */

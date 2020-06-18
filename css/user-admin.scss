@@ -1,0 +1,50 @@
+$pizza-red: #A80E0E;
+$mustard: #FFAA00;
+$lg-mustard: #F9B826;
+$black: #281923;
+$lg-black: #343232;
+$enf-gray: #707070;
+$bg-active: #506BFA;
+
+main{
+    min-height: 300px;
+    margin: 1.5em 2em;
+    #user-menu{
+        padding: 1.5em;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-shadow: 1px 2px 5px #444;
+            li{
+                padding-left: 1em;
+                display: flex;
+                align-items: center;
+                border: 1px solid #ccc;
+                height: 50px;
+                svg{
+                    margin-right: 1em;
+                }
+                a{
+                    display: block;
+                    width: 100%;
+                    text-decoration: none;
+                    color: $lg-black;
+                    transition: all .1s;
+                    &:hover{
+                        color: $mustard;
+                    }
+                }
+                &.active{
+                    background-color: $bg-active;
+                    a{
+                        color:#fff;
+                        &:hover{
+                            color: #ccc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
