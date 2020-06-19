@@ -87,14 +87,16 @@ main {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount h4 {
+.car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount .content-dollar h4 {
   margin-top: auto;
   margin-bottom: auto;
 }
 .car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount div {
   display: flex;
+  text-align: right;
 }
 .car-list .car-list__product li .car-list_product__detail-product .car-list_product__detail-product__cst-amount div .amount-product {
+  width: max-content;
   margin-left: 45px;
   margin-top: auto;
   margin-bottom: auto;

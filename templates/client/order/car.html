@@ -54,18 +54,18 @@
     <!--Principal-->
     <main>
 
-        
+
         <!-- div de la barra de buscar -->
         <div class="container">
             <div class="row">
-                <div class="col-md-12"> 
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Carrito</li>
-                        </ol> 
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Carrito</li>
+                    </ol>
                 </div>
             </div>
-        </div>  
+        </div>
 
         <!-- lista de productos en el carro -->
         <div class="car container">
@@ -75,7 +75,7 @@
                     <div class="car-list container">
                         <ul class="car-list__product">
                             <!-- primer producto -->
-                            <li class="row">
+                            <li id="first-product" class="row">
                                 <div class="car-list_product__img-product col-md-3">
                                     <img src="../../../img/pizza-pepperoni.png" alt="Un delicioso alimento">
                                 </div>
@@ -83,44 +83,50 @@
                                     <h2>Pizza de Pepperoni</h2>
                                     <span class="size-product">Tamaño: 12"</span>
                                     <div class="car-list_product__detail-product__cst-amount">
-                                        <h4>$5.00</h4>
+                                        <div class="content-dollar">
+                                            <h4>$5.00</h4>
+                                        </div>
                                         <div class="amount">
                                             <span class="amount-product">Cantidad</span>
-                                            <input class="input-amount" value="1" min="1" type="number" name="" id="">
+                                            <input class="input-amount" value="1" min="1" type="number" name=""
+                                                id="input1">
                                         </div>
                                     </div>
                                     <span class="shopping-time">Delivery en 30 Min</span>
                                 </div>
                                 <div class="car-list_product__delete-product col-md-4 align-self-end">
-                                    <button type="button" class="btn btn-link">
+                                    <button type="button" class="btn btn-link" onclick="deleteProduct('firstProduct')" id="firstProduct">
                                         <i class="far fa-trash-alt"></i> Remover</button>
                                 </div>
                             </li>
                             <!-- segundo producto -->
-                            <li class="row">
+                            <li class="row" id="second-product">
                                 <div class="car-list_product__img-product col-md-3">
                                     <img src="../../../img/pizza-pepperoni.png" alt="Un delicioso alimento">
                                 </div>
                                 <div class="car-list_product__detail-product col-md-5">
-                                    <h2>Pizza de Pepperoni</h2>
+                                    <h2>Pizza de Hawaiana</h2>
                                     <span class="size-product">Tamaño: 12"</span>
                                     <div class="car-list_product__detail-product__cst-amount">
-                                        <h4>$5.00</h4>
+                                        <div class="content-dollar">
+                                            <h4>$5.00</h4>
+                                        </div>
                                         <div class="amount">
                                             <span class="amount-product">Cantidad</span>
-                                            <input class="input-amount" value="1" min="1" type="number" name="" id="">
+                                            <input class="input-amount" value="1" min="1" type="number" name=""
+                                                id="input2">
                                         </div>
                                     </div>
                                     <span class="shopping-time">Delivery en 30 Min</span>
                                 </div>
                                 <div class="car-list_product__delete-product align-self-end col-md-4">
-                                    <button type="button" class="btn btn-link">
+                                    <button type="button" class="btn btn-link" onclick="deleteProduct('secondProduct')" id="secondProduct">
                                         <i class="far fa-trash-alt"></i> Remover</button>
                                 </div>
                             </li>
                         </ul>
                         <div class="buy-or-continue">
-                            <a href="#">Continuar Comprando</a>
+                            <a href="../menu/menu.html">Continuar Comprando</a>
                             <a class="btn btn-dark buy" href="pago.html">PAGAR</a>
                         </div>
                     </div>
@@ -139,26 +145,18 @@
                                     <span>Precio (2 Productos)</span>
                                 </div>
                                 <div class="right">
-                                    <span class="black-span">$10.99</span>
+                                    <span class="black-span">$10.00</span>
                                 </div>
-                            </div>
-                            <div class="col-sm-12 detail-list__shipping-cost">
-                                <div class="left">
-                                    <span>Costo de Envío</span>
-                                </div>
-                                <div class="right">
-                                    <span class="black-span">$2.50</span>
-                                </div>
-                            </div>
+                            </div> 
                             <div class="col-sm-12 detail-list__total-cost">
                                 <div class="left">
                                     <span class="black-span">Monto a Pagar</span>
                                 </div>
                                 <div class="right">
-                                    <span class="black-span">$13.49</span>
+                                    <span class="black-span final-cost">$10.00</span>
                                 </div>
-                            </div> 
-                        </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -267,6 +265,7 @@
 
     <!--Scripts-->
     <script src="../../../js/main.js"></script>
+    <script src="../../../js/car.js"></script>
 </body>
 
 </html>

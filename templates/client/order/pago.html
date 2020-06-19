@@ -93,7 +93,7 @@
                                             <!-- firsh radio button -->
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="primerosRadios"
-                                                    id="button1" value="option1" checked>
+                                                    id="button1" value="option1" onclick="changeNewDir(true)" checked>
                                                 <label class="form-check-label" for="button1">
                                                     <span>Managua, Nicaragua.</span>
                                                     <br>
@@ -104,7 +104,7 @@
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="radio" name="primerosRadios"
-                                                    id="button2" value="option2">
+                                                    id="button2" onclick="changeNewDir(false)" value="option2">
                                                 <label class="form-check-label" for="button2">
                                                     <span>Agregar Nueva Dirección.</span></label>
                                             </div>
@@ -119,44 +119,44 @@
                                     <form action="#" class="needs-validation" validate>
                                         <div class="row form-row">
                                             <div class="col-md-6 col-sm-12 top ">
-                                                <input type="text" class="form-control" id="validationTooltip01"
-                                                    placeholder="Nombre*" >
+                                                <input type="text" class="form-control activated"
+                                                    placeholder="Nombre*" id="input-1" disabled>
                                             </div>
                                             <div class="col-md-6 col-sm-12 top">
-                                                <input type="text" class="form-control" id="validationTooltip01"
-                                                    placeholder="Apellido*" >
+                                                <input type="text" id="input-2" class="form-control activated" 
+                                                    placeholder="Apellido*" disabled>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-md-6 col-sm-12 top">
-                                                <input type="email" class="form-control" id="validationTooltip01"
-                                                    placeholder="Correo Electrónico*" >
+                                                <input type="email" id="input-3" class="form-control activated" 
+                                                    placeholder="Correo Electrónico*" disabled>
                                             </div>
                                             <div class="col-md-6 col-sm-12 top">
-                                                <input type="tel" class="form-control" id="validationTooltip01"
-                                                    placeholder="Teléfono*" >
+                                                <input type="tel" id="input-4" class="form-control activated" 
+                                                    placeholder="Teléfono*" disabled>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-sm-12 top">
-                                                <textarea class="form-control" placeholder="Dirección*"
-                                                    rows="3"></textarea>
+                                                <textarea class="form-control activated" id="input-5" placeholder="Dirección*"
+                                                    rows="3" disabled></textarea>
                                             </div>
                                         </div>
                                         <div class="form-row">
                                             <div class="col-md-6 top">
-                                                <select class="custom-select" >
-                                                    <option selected value="">Departamento</option>
+                                                <select class="custom-select activated"id="input-6" disabled>
+                                                    <option selected>Departamento</option>
                                                     <option>Managua</option>
                                                     <option>Masaya</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-6 top">
-                                                <select class="custom-select">
-                                                    <option selected value="">Municipio*</option>
-                                                    <option value="">Managua</option>
-                                                    <option value="">Cuidad Sandino</option>
-                                                    <option value="">Ticuantepe</option>
+                                                <select class="custom-select activated" id="input-7" disabled>
+                                                    <option selected>Municipio*</option>
+                                                    <option >Managua</option>
+                                                    <option>Cuidad Sandino</option>
+                                                    <option>Ticuantepe</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -175,60 +175,19 @@
 
 
                                 <div class="button-end">
-                                    <button class="btn btn-dark top" type="button">CONTINUAR</button>
+                                    <button onclick="next(2)" class="btn btn-dark top" type="button">CONTINUAR</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left collapsed" type="button"
-                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    <img src="../../../img/number 2.png" alt="2">
-                                    <span>Método de Envío</span>
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordionExample">
-                            <div class="card-body ">
-                                <div class=" container">
-                                    <div class="form-row row">
-                                        <div class="group-buttons button-group col-sm-12">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio1" value="option1" checked>
-                                                <label class="form-check-label" for="inlineRadio1">
-                                                    Gratis (30 min)
-                                                </label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                    id="inlineRadio2" value="option2">
-                                                <label class="form-check-label" for="inlineRadio2">
-                                                    Express (15 min)
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="button-end form-row row">
-                                        <div class="button-next col-sm-12">
-                                            <button type="button" class="btn btn-dark">CONTINUAR</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
+                    
+                    <div class="card collapse-three">
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left collapsed" type="button"
                                     data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                                     aria-controls="collapseThree">
-                                    <img src="../../../img/number 3.png" alt="3">
+                                    <img src="../../../img/number 2.png" alt="3">
                                     <span>Método de Pago</span>
                                 </button>
                             </h2>
@@ -237,7 +196,7 @@
                             data-parent="#accordionExample">
                             <div class="card-body">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="otherRadios" id="example1"
+                                    <input class="form-check-input" onclick="changePay(true)" type="radio" name="otherRadios" id="example1"
                                         value="option1" checked>
                                     <label class="form-check-label" for="example1">
                                         Tarjeta de Crédito
@@ -249,52 +208,52 @@
                                     </div>
                                     <form action="#" class="needs-validation" validate>
                                         <div class="form-row">
-                                            <input type="text" class="form-control tarjetNumber"
-                                                placeholder="Número de Tarjeta de Crédito">
+                                            <input type="text" id="pay-1" class="form-control tarjetNumber pay-disabled"
+                                                placeholder="Número de Tarjeta de Crédito" >
                                         </div>
                                         <div id="span-with-margin">
                                             <span>Fecha de Expiración</span>
                                         </div>
                                         <div class="form-row container">
                                             <div class="row collections ">
-                                                <select class="custom-select col-lg-4 col-md-12 col-sm-12">
-                                                    <option select value="">Mes</option>
-                                                    <option value="">Enero</option>
-                                                    <option value="">Febrero</option>
-                                                    <option value="">Marzo</option>
-                                                    <option value="">Abril</option>
-                                                    <option value="">Mayo</option>
-                                                    <option value="">Junio</option>
-                                                    <option value="">Julio</option>
-                                                    <option value="">Agosto</option>
-                                                    <option value="">Septiembre</option>
-                                                    <option value="">Octubre</option>
-                                                    <option value="">Noviembre</option>
-                                                    <option value="">Diciembre</option>
+                                                <select id="pay-2" class="pay-disabled activated custom-select col-lg-4 col-md-12 col-sm-12">
+                                                    <option selected>Mes</option>
+                                                    <option>Enero</option>
+                                                    <option>Febrero</option>
+                                                    <option>Marzo</option>
+                                                    <option>Abril</option>
+                                                    <option>Mayo</option>
+                                                    <option>Junio</option>
+                                                    <option>Julio</option>
+                                                    <option>Agosto</option>
+                                                    <option>Septiembre</option>
+                                                    <option>Octubre</option>
+                                                    <option>Noviembre</option>
+                                                    <option>Diciembre</option>
                                                 </select>
-                                                <select
-                                                    class="custom-margin-left custom-select col-lg-4 col-md-12 col-sm-12">
-                                                    <option value="">Año</option>
-                                                    <option value="">2020</option>
-                                                    <option value="">2021</option>
-                                                    <option value="">2022</option>
+                                                <select  id="pay-3"
+                                                    class="pay-disabled custom-margin-left  activated custom-select col-lg-4 col-md-12 col-sm-12">
+                                                    <option select>Año</option>
+                                                    <option>2020</option>
+                                                    <option>2021</option>
+                                                    <option>2022</option>
                                                 </select>
-                                                <input
-                                                    class="custom-margin-left col-lg-4 col-md-12 col-sm-12 form-control"
-                                                    type="tel" name="" id="" placeholder="CVV">
+                                                <input  id="pay-4"
+                                                    class="pay-disabled custom-margin-left col-lg-4 col-md-12 col-sm-12 form-control"
+                                                    type="tel" placeholder="CVV">
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="form-check" id="check-with-margin">
-                                    <input class="form-check-input" type="radio" name="otherRadios" id="example2"
+                                    <input class="form-check-input" onclick="changePay(false)" type="radio" name="otherRadios" id="example2"
                                         value="option2">
                                     <label class="form-check-label" for="example2">
                                         Pagar Cuando se Realice la Entrega
                                     </label>
                                 </div>
                                 <div class="button-next col-sm-12 button-end">
-                                    <button type="button" class="btn btn-dark">CONTINUAR</button>
+                                    <button type="button"  onclick="next(3)" class="btn btn-dark">CONTINUAR</button>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +264,7 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
                                     data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                    <img src="../../../img/number 4.png" alt="4">
+                                    <img src="../../../img/number 3.png" alt="4">
                                     <span>Revisión de la Orden</span>
                                 </button>
                             </h2>
@@ -338,16 +297,16 @@
                                                                 <div class="amount">
                                                                     <span class="amount-product">Cantidad</span>
                                                                     <input class="input-amount" value="1" min="1"
-                                                                        type="number" name="" id="">
+                                                                        type="number" name="" id="" disabled>
                                                                 </div>
                                                             </div>
                                                             <span class="shopping-time">Delivery en 30 Min</span>
                                                         </div>
-                                                        <div
+                                                        <!-- <div
                                                             class="car-list_product__delete-product col-sm-12 col-md-4 col-lg-4 align-self-end">
                                                             <button type="button" class="btn btn-link">
                                                                 <i class="far fa-trash-alt"></i> Remover</button>
-                                                        </div>
+                                                        </div> -->
                                                     </li>
                                                     <!-- segundo producto -->
                                                     <li class="row">
@@ -365,16 +324,16 @@
                                                                 <div class="amount">
                                                                     <span class="amount-product">Cantidad</span>
                                                                     <input class="input-amount" value="1" min="1"
-                                                                        type="number" name="" id="">
+                                                                        type="number" name="" id="" disabled>
                                                                 </div>
                                                             </div>
                                                             <span class="shopping-time">Delivery en 30 Min</span>
                                                         </div>
-                                                        <div
+                                                        <!-- <div
                                                             class="car-list_product__delete-product align-self-end col-sm-12 col-md-4 col-lg-4">
                                                             <button type="button" class="btn btn-link">
                                                                 <i class="far fa-trash-alt"></i> Remover</button>
-                                                        </div>
+                                                        </div> -->
                                                     </li>
                                                 </ul>
                                             </div>
@@ -390,9 +349,9 @@
                                             </div>
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control" placeholder="Cupón"
-                                                    aria-describedby="button-addon2">
+                                                    aria-describedby="button-addon2" id="cupon-1">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-dark" type="button"
+                                                    <button class="btn btn-dark" type="button" onclick="becomeCost()"
                                                         id="button-addon2">Canjear</button>
                                                 </div>
                                             </div>
@@ -403,17 +362,9 @@
                                                     <span>Monto a Pagar</span>
                                                 </div>
                                                 <div class="right">
-                                                    <span>$10.99</span>
+                                                    <span>$10.00</span>
                                                 </div>
-                                            </div>
-                                            <div class="cost-to-sheppin">
-                                                <div class="left">
-                                                    <span>Costo de Envío</span>
-                                                </div>
-                                                <div class="right">
-                                                    <span>$2.50</span>
-                                                </div>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>
@@ -425,13 +376,13 @@
                                                 <span>Total de la Orden</span>
                                             </div>
                                             <div class="right">
-                                                <span>$13.49</span>
+                                                <span id="the-total-cost">$10.00</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="pay">
-                                    <button class="bt btn-dark">REALIZAR ORDEN</button>
+                                    <button class="bt btn-dark" onclick="pay()">REALIZAR ORDEN</button>
                                 </div>
                             </div>
                         </div>
@@ -451,23 +402,15 @@
                                     <span>Precio (2 Productos)</span>
                                 </div>
                                 <div class="right">
-                                    <span class="black-span">$10.99</span>
+                                    <span class="black-span">$10.00</span>
                                 </div>
-                            </div>
-                            <div class="col-sm-12 detail-list__shipping-cost">
-                                <div class="left">
-                                    <span>Costo de Envío</span>
-                                </div>
-                                <div class="right">
-                                    <span class="black-span">$2.50</span>
-                                </div>
-                            </div>
+                            </div> 
                             <div class="col-sm-12 detail-list__total-cost">
                                 <div class="left">
                                     <span class="black-span">Monto a Pagar</span>
                                 </div>
                                 <div class="right">
-                                    <span class="black-span">$13.49</span>
+                                    <span id="final-total-cost" class="black-span">$10.00</span>
                                 </div>
                             </div>
                         </div>
@@ -580,6 +523,7 @@
 
     <!--Scripts-->
     <script src="../../../js/main.js"></script> 
+    <script src="../../../js/pago.js"></script>
 </body>
 
 </html>

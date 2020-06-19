@@ -10,7 +10,6 @@ main {
 }
 
 .breadcrumb {
-    
     margin-top: 30px;
     background: #f3f3f3;
     height: 40px;
@@ -31,13 +30,12 @@ main {
     .breadcrumb-item + .breadcrumb-item::before {
         content: ">";
     }
-} 
+}
 
 .btn-dark {
     font-weight: 600;
     font-size: 15px;
 }
-
 
 .route-path {
     background: #f3f3f3;
@@ -111,16 +109,25 @@ main {
                     margin-top: 20px;
                     margin-bottom: 10px;
 
-                    h4 {
-                        margin-top: auto;
-                        margin-bottom: auto;
+                    // lo siguiente esta defectuoso
+                    // ya que no se logra el hecho
+                    // porque se expande el contenedor
+                    // al crecer la cantidad del h4
+                    // se intentaron muchas cosas
+                    .content-dollar {   
+                        h4 {
+                            margin-top: auto;
+                            margin-bottom: auto;
+                        }
                     }
 
                     div {
                         // class amount
                         display: flex;
+                        text-align: right;
 
                         .amount-product {
+                            width: max-content;
                             margin-left: 45px;
                             margin-top: auto;
                             margin-bottom: auto;
@@ -163,7 +170,7 @@ main {
                     text-decoration: none;
                     outline: none;
                     color: $pizza-red;
-                } 
+                }
 
                 &:focus {
                     text-decoration: none;
