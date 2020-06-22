@@ -40,6 +40,11 @@ main #user-menu ul li.active a {
 main #user-menu ul li.active a:hover {
   color: #ccc;
 }
+main .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2em;
+}
 main #user-main .order {
   margin: 1em 0;
   padding: 1em;
@@ -67,6 +72,30 @@ main #user-main .order .order-details h6 {
 }
 main #user-main .order .order-details span {
   font-weight: 600;
+}
+main #user-main .direction {
+  padding: 2em;
+  border: 1px solid #ccc;
+}
+main #user-main .direction h4 {
+  font-weight: 600;
+}
+main #user-main .direction .d-flex {
+  margin-bottom: 2em;
+}
+main #user-main .direction .d-flex .direction-btns a {
+  color: #707070;
+  margin-right: 1em;
+  text-decoration: none;
+}
+main #user-main .direction .d-flex .direction-btns a:hover {
+  color: #506BFA;
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    grid-template-columns: auto !important;
+  }
 }
 
 /*# sourceMappingURL=user-admin.css.map */

@@ -1,5 +1,4 @@
 //map.js
-
 //Set up some of our variables.
 var map; //Will contain map object.
 var marker = false; ////Has the user plotted their location marker? 

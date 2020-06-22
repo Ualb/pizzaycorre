@@ -16,8 +16,12 @@
     <link rel="stylesheet" href="../../../css/user-admin.css">
 
     <!--Dependencias locales-->
-
-
+    <style>
+        #map {
+            min-height: 300px;
+            height: auto;
+        }
+    </style>
 
     <title>Pizza y Corre | Administración de usuario</title>
 </head>
@@ -54,57 +58,57 @@
     <!--Principal-->
     <main>
         <div class="row">
-            <section class="col-lg-3">
+            <section class="col-lg-4">
                 <article id="user-menu">
                     <ul>
                         <li><a href="#"><i class="fas fa-receipt"></i> Mis órdenes</a></li>
-                        <li><a href="#"><i class="fas fa-user"></i> Información Personal</a></li>
-                        <li class="active"><a href="#"><i class="fas fa-map-marked-alt"></i> Gestionar Direcciones</a></li>
+                        <li class="active"><a href="#"><i class="fas fa-user"></i> Información Personal</a></li>
+                        <li><a href="#"><i class="fas fa-map-marked-alt"></i> Gestionar Direcciones</a></li>
                     </ul>
                 </article>
             </section>
-            <section class="col-lg-9 mt-4">
-                <div id="user-main" class="grid-container">
-                    <article class="direction">
-                        <div class="d-flex justify-content-between">
-                            <h4><i class="fas fa-home"></i> Casa</h4>
-                            <div class="direction-btns">
-                                <a href="#"><i class="far fa-edit"></i> Editar</a>
-                                <a href="#" class="direction-delete-btn"><i class="far fa-trash-alt"></i> Borrar</a>
+            <section class="col-lg-8 mt-4">
+                <div id="user-main">
+                    <section class="col-12">
+                        <form action="#">
+                            <div class="row mb-5">
+                                <div class="col-12" style="padding: 0 3em; margin-top: 2em;">
+                                    <h6>Editar Dirección</h6>
+                                    <hr>
+                                    <div id="form-direction">
+                                        <div class="form-group">
+                                            <input type="text" name="dir-ref" id="dir-ref" class="form-control"
+                                                placeholder="Dirección">
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="dpto" id="dpto" class="form-control">
+                                                <option disabled selected>Departamento</option>
+                                                <option value="Managua">Managua</option>
+                                                <option value="Masaya">Masaya</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select name="municipio" id="municipio" class="form-control" disabled>
+                                                <option selected disabled>Municipio</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" name="no-casa" id="no-casa" class="form-control"
+                                                placeholder="N° de casa">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Selecciona tu ubicación (opcional)</label>
+                                            <div id="map"></div>
+                                            <input type="text" id="lat" readonly="yes" class="form-control">
+                                            <input type="text" id="lng" readonly="yes" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-block btn-danger">Editar</button>
                             </div>
-                        </div>
-                        <p>Ciudad Sandino, Managua. Zona 7, MGA 78889</p>
-                    </article>
-                    <article class="direction">
-                        <div class="d-flex justify-content-between">
-                            <h4><i class="far fa-building"></i> Trabajo</h4>
-                            <div class="direction-btns">
-                                <a href="#"><i class="far fa-edit"></i> Editar</a>
-                                <a href="#" class="direction-delete-btn"><i class="far fa-trash-alt"></i> Borrar</a>
-                            </div>
-                        </div>
-                        <p>Ciudad Sandino, Managua. Zona 7, MGA 78889</p>
-                    </article>
-                    <article class="direction">
-                        <div class="d-flex justify-content-between">
-                            <h4><i class="fas fa-map-marked-alt"></i> Casa de Pepito</h4>
-                            <div class="direction-btns">
-                                <a href="#"><i class="far fa-edit"></i> Editar</a>
-                                <a href="#" class="direction-delete-btn"><i class="far fa-trash-alt"></i> Borrar</a>
-                            </div>
-                        </div>
-                        <p>Ciudad Sandino, Managua. Zona 7, MGA 78889</p>
-                    </article>
-                    <article class="direction">
-                        <div class="d-flex justify-content-between">
-                            <h4><i class="fas fa-university"></i> Campus</h4>
-                            <div class="direction-btns">
-                                <a href="#"><i class="far fa-edit"></i> Editar</a>
-                                <a href="#" class="direction-delete-btn"><i class="far fa-trash-alt"></i> Borrar</a>
-                            </div>
-                        </div>
-                        <p>Ciudad Sandino, Managua. Zona 7, MGA 78889</p>
-                    </article>
+                        </form>
+                    </section>
                 </div>
             </section>
         </div>
@@ -212,7 +216,11 @@
     </footer>
 
     <!--Scripts-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuzmIMIH_LYIvdQzN1CSij1T5rJFjlwZg&callback=initMap&libraries=&v=weekly"
+        defer></script>
     <script src="../../../js/main.js"></script>
+    <script src="../../../js/map-selector.js"></script>
 </body>
 
 </html>
