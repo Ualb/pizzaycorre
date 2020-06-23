@@ -287,15 +287,15 @@ main {
                     text-align: justify;
                 }
 
-                .person {
+                #spinner-person {
                     margin-top: 2em;
 
-                    .person-name {
+                    #person-name {
                         font-size: 26px;
                         margin-bottom: 0;
                     }
 
-                    .person-description {
+                    #person-description {
                         font-size: 16px;
                     }
                 }
@@ -315,6 +315,7 @@ main {
                             border-radius: 20px;
                             border: none;
                             outline: none;
+                            transition: all .2s;
                         }
 
                         &.spin-active button {

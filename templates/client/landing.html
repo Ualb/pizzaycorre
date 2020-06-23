@@ -239,26 +239,25 @@
                 <img class="img-hr" src="../../img/img-hr.png" alt="-----------------------">
                 <h5>¡Pruebe nuestra comida mas deliciosa, la preferida por los clientes!</h5>
             </div>
-            <div class="row">
+            <div class="row" id="landing-spinner">
                 <div class="col-lg-5 col-12">
                     <article id="images-container">
                         <p class="img-decoration"></p>
-                        <img class="img-main" src="../../img/recomend-avatar.png" alt="">
+                        <img class="img-main" id="spinner-img" src="../../img/avatar-sl1.png" alt="">
                     </article>
                 </div>
                 <div class="col-lg-7 col-12 d-flex">
                     <article class="description">
                         <h6><i class="fas fa-quote-left"></i></h6>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis a architecto sequi obcaecati magnam maxime necessitatibus non expedita quod, ipsa sit tempora eaque beatae numquam adipisci eius quos inventore facilis.</p>
-                        <div class="person">
-                            <p class="person-name">Nina Margaret</p>
-                            <p class="person-description text-muted">Cliente recurrente</p>
+                        <p id="spinner-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis a architecto sequi obcaecati magnam maxime necessitatibus non expedita quod, ipsa sit tempora eaque beatae numquam adipisci eius quos inventore facilis.</p>
+                        <div id="spinner-person">
+                            <p id="person-name">Nina Margaret</p>
+                            <p class="person-description text-muted" id="person-description">Cliente recurrente</p>
                         </div>
                         <ul id="description-spin-index">
-                            <li class="spin-active"><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
-                            <li><button></button></li>
+                            <li class="spin-li spin-active"><button class="spin-btn" data-spin="1"></button></li>
+                            <li class="spin-li"><button class="spin-btn" data-spin="2"></button></li>
+                            <li class="spin-li"><button class="spin-btn" data-spin="3"></button></li>
                         </ul>
                     </article>
                 </div>
@@ -369,6 +368,7 @@
     <!--Scripts-->
     <script src="../../js/main.js"></script>
     <script src="../../js/landing-timer.js"></script>
+    <script src="../../js/landing-slider.js"></script>
 </body>
 
 </html>

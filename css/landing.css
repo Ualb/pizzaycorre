@@ -223,14 +223,14 @@ main #recomendations .row .description > p {
   line-height: 30px;
   text-align: justify;
 }
-main #recomendations .row .description .person {
+main #recomendations .row .description #spinner-person {
   margin-top: 2em;
 }
-main #recomendations .row .description .person .person-name {
+main #recomendations .row .description #spinner-person #person-name {
   font-size: 26px;
   margin-bottom: 0;
 }
-main #recomendations .row .description .person .person-description {
+main #recomendations .row .description #spinner-person #person-description {
   font-size: 16px;
 }
 main #recomendations .row .description ul#description-spin-index {
@@ -248,6 +248,7 @@ main #recomendations .row .description ul#description-spin-index li button {
   border-radius: 20px;
   border: none;
   outline: none;
+  transition: all 0.2s;
 }
 main #recomendations .row .description ul#description-spin-index li.spin-active button {
   width: 50px;
