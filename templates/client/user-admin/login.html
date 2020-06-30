@@ -14,24 +14,28 @@
     <link rel="stylesheet" href="../../../css/general.css">
 
     <style>
-        #form-container{
+        #form-container {
             padding: 2em;
             border: 1px solid #ccc;
             box-shadow: 1px 2px 5px #ccc;
         }
-        h2{
+
+        h2 {
             font-weight: 500;
             text-transform: uppercase;
         }
+
         hr {
             border: 0;
             height: 1px;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
         }
-        .btn-danger{
+
+        .btn-danger {
             background-color: #A80E0E;
         }
-        a#no-login{
+
+        a#no-login {
             color: #FFAA00;
             text-decoration: none;
         }
@@ -43,7 +47,7 @@
 <body>
     <main class="row justify-content-center mt-5">
         <div class="col-md-4 col-12">
-            <div id="form-container" class="text-center">
+            <div id="form-container" class="text-center" onsubmit="validateSubmit()">
                 <h2>Inicio de Sesión</h2>
                 <hr class="mt-3 mb-4">
                 <form action="#">
@@ -72,6 +76,20 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+        function validateSubmit() {
+            if (document.querySelector("#user").value == "" || document.querySelector("#pswd").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Rellene todos los campos',
+                })
+                return false;
+            }
+            
+        }
+    </script>
 </body>
 
 </html>

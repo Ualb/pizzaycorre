@@ -26,7 +26,8 @@
         #avatar-container {
             width: 100%;
         }
-        #avatar-container img{
+
+        #avatar-container img {
             width: 100%;
         }
     </style>
@@ -67,41 +68,50 @@
     <main class="container mt-4">
         <section class="col-12">
             <h1 class="text-center">Crear cuenta de usuario</h1>
-            <form action="#">
+            <form action="#" method="POST" id="signup-form" class="needs-validation">
                 <div class="row mb-5">
                     <div class="col-md-8 col-12" style="padding: 0 3em; margin-top: 2em;">
                         <h6>Datos del Usuario</h6>
                         <hr>
-                        <div class="form-group">
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombres" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="apellido" id="apellido" placeholder="Apellidos"
-                                class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <select name="gend" id="gend" class="form-control">
-                                <option disabled selected>Sexo</option>
-                                <option value="Male">Masculino</option>
-                                <option value="Female">Femenino</option>
-                                <option value="LGTB">Prefiero no decirlo</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="correo" id="correo" placeholder="Correo electrónico"
-                                class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="tel" id="tel" placeholder="Telefono" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password1" placeholder="Contraseña" class="form-control" id="">
-                            <small class="form-text text-muted">La contraseña debe ser mínimo de 8 caracteres e incluir
-                                al menos una letra mayúscula, minúscula y un número.</small>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password2" placeholder="Confirme la contraseña"
-                                class="form-control" id="">
+                        <div id="form-user">
+                            <div class="form-group">
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombres" class="form-control">
+                                <div class="invalid-feedback">Nombre Obligatorio</div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="apellido" id="apellido" placeholder="Apellidos"
+                                    class="form-control">
+                                    <div class="invalid-feedback">Apellidos Obligatorio</div>
+                            </div>
+                            <div class="form-group">
+                                <select name="gend" id="gend" class="form-control">
+                                    <option value="0" disabled selected>Sexo</option>
+                                    <option value="Male">Masculino</option>
+                                    <option value="Female">Femenino</option>
+                                    <option value="LGTB">Prefiero no decirlo</option>
+                                </select>
+                                <div class="invalid-feedback">Requerido</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="correo" id="correo" placeholder="Correo electrónico"
+                                    class="form-control">
+                                <div class="invalid-feedback">Correo inválido (debe ser de formato pepito@mail.com)</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="tel" id="tel" placeholder="Telefono" class="form-control not-req">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password1" placeholder="Contraseña" class="form-control" id="password">
+                                <small class="form-text text-muted">La contraseña debe ser mínimo de 8 caracteres e incluir
+                                    al menos una letra mayúscula, minúscula y un número.</small>
+                                <div class="invalid-feedback">Requerido</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password2" placeholder="Confirme la contraseña"
+                                    class="form-control" id="password2">
+                                <div class="invalid-feedback" id="pswdconfirm-fb"></div>
+                            </div>
                         </div>
                         <h6>Dirección</h6>
                         <hr>
@@ -113,46 +123,51 @@
                             <div class="form-group">
                                 <input type="text" name="dir-ref" id="dir-ref" class="form-control"
                                     placeholder="Dirección">
+                                <div class="invalid-feedback">Direccion obligatoria</div>
                             </div>
                             <div class="form-group">
                                 <select name="dpto" id="dpto" class="form-control">
-                                    <option disabled selected>Departamento</option>
+                                    <option disabled selected value="0">Departamento</option>
                                     <option value="Managua">Managua</option>
                                     <option value="Masaya">Masaya</option>
                                 </select>
+                                <div class="invalid-feedback">Por favor seleccione un departamento</div>
                             </div>
                             <div class="form-group">
                                 <select name="municipio" id="municipio" class="form-control" disabled>
-                                    <option selected disabled>Municipio</option>
+                                    <option selected disabled value="0">Municipio</option>
                                 </select>
+                                <div class="invalid-feedback">Por favor seleccione un municipio</div>
                             </div>
                             <div class="form-group">
                                 <input type="number" name="no-casa" id="no-casa" class="form-control"
                                     placeholder="N° de casa">
+                                <div class="invalid-feedback">Ingrese un número de casa</div>
                             </div>
                             <div class="form-group">
                                 <label for="">Selecciona tu ubicación (opcional)</label>
                                 <div id="map"></div>
-                                <input type="text" id="lat" readonly="yes" class="form-control">
-                                <input type="text" id="lng" readonly="yes" class="form-control">
+                                <input type="text" id="lat" readonly="yes" class="form-control not-req">
+                                <input type="text" id="lng" readonly="yes" class="form-control not-req">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-12" style="margin-top: 2em;">
-                        <h6>Foto (Opcional)</h6>
-                        <div class="form-group">
-                            <input type="file" name="photo" id="photo-form" class="form-control-file">
-                            <div id="avatar-container">
-                                <img src="../../../img/avatar.jpg" alt="" id="avatar" class="img-thumbnail">
-                            </div>
+                </div>
+                <div class="col-md-4 col-12" style="margin-top: 2em;">
+                    <h6>Foto (Opcional)</h6>
+                    <div class="form-group">
+                        <input type="file" name="photo" id="photo-form" class="form-control-file">
+                        <div id="avatar-container">
+                            <img src="../../../img/avatar.jpg" alt="" id="avatar" class="img-thumbnail">
                         </div>
                     </div>
-                    <div class="form-group w-100 d-flex justify-content-center">
-                        <label for="terms-conditions" class="mr-2">Acepto los <a href="#">Términos y condiciones del
-                                servicio</a></label>
-                        <input type="checkbox" name="terms-conditions" id="terms-conditions">
-                    </div>
-                    <button type="submit" class="btn btn-block btn-danger">Registrarme</button>
+                </div>
+                <div class="form-group w-100 d-flex justify-content-center">
+                    <label for="terms-conditions" class="mr-2">Acepto los <a href="#">Términos y condiciones del
+                            servicio</a></label>
+                    <input type="checkbox" name="terms-conditions" id="terms-conditions">
+                </div>
+                <button type="submit" class="btn btn-block btn-danger">Registrarme</button>
                 </div>
             </form>
         </section>
@@ -260,11 +275,13 @@
 
     <!--Scripts-->
     <script src="../../../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuzmIMIH_LYIvdQzN1CSij1T5rJFjlwZg&callback=initMap&libraries=&v=weekly"
         defer></script>
     <script src="../../../js/signup-avatar.js"></script>
     <script src="../../../js/map-selector.js"></script>
+    <script src="../../../js/signup-validate.js"></script>
 </body>
 
 </html>
