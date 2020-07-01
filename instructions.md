@@ -1,13 +1,9 @@
 ### TODO:
 
-@[kevinTorrez2098] Branch `menu`
-##### TODO: páginas relacionadas a menú y detalle producto (vista de descripción y vista de comentarios)
-@[xvicx] Branch `other`
-##### TODO: páginas de contáctenos y acerca de nosotros (con contenido)
-@[ualb] Branch `order`
-##### TODO: páginas relacionadas ordenar
-@[thefoo547] Branch `landing-user`
-##### TODO: landing page y administración de usuario y direcciones
+@[ualb] Branch `menu-admin`
+##### TODO: páginas relacionadas administrador menú y promociones
+@[thefoo547] Branch `ordernlogin`
+##### TODO: administración de ordenes
 
 La responsividad queda a su criterio, ya sea de ocultar elementos o de hacer 100% de longitud, si hay dudas consultar al grupo. 
 
