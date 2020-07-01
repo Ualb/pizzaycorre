@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="css/main.css">
 
 
-    <title>Pizza y Corre | Menú-Pizzas</title>
+    <title>Pizza y Corre | Menú-Combo</title>
 </head>
 
 <body>
@@ -65,7 +65,7 @@
             
           <li class="breadcrumb-item"><a href="#">Inicio</a></li>
           <li class="breadcrumb-item"><a href="#">Menú</a></li>
-          <li class="breadcrumb-item active">Pizzas</li>
+          <li class="breadcrumb-item active">Combo</li>
         </ol>
           
 
@@ -85,63 +85,37 @@
                     
                     </li>
                       <li class="list-group-item"><h5>PRECIO</h5>
-                        <b>$0 </b> <b style="Left: 30%;" id="number">$10</b>
-                        <input type="range" class="custom-range valor" id="RangePrecio" min="1" max="10" value="1" >
+                        <b>$0 $30</b>
+                        <input type="range" class="custom-range valor" id="customRange1" min="1" max="50" value="1" >
                         
                         
                     </li>
                       <li class="list-group-item">
                           <h5>TIPOS</h5>
                           <div class="form-check fuente">
-                            <input class="form-check-input " type="checkbox" value="" id="CheckH" onclick="filtrar()">
-                            <label class="form-check-label" for="defaultCheck1">Hawaina</label>
+                            <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">Mixto</label>
                         </div>
 
                         <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="CheckJ" onclick="filtrar()">
-                            <label class="form-check-label" for="defaultCheck2">Jamón</label>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">Grandes</label>
                         </div>
 
                         <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="CheckV" onclick="filtrar()">
-                            <label class="form-check-label" for="defaultCheck3">Vegetales</label>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                            <label class="form-check-label" for="defaultCheck3">Familiar</label>
                         </div>
 
                         <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="CheckC" onclick="filtrar()">
-                            <label class="form-check-label" for="defaultCheck3">Criolla</label>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                            <label class="form-check-label" for="defaultCheck4">Combazos</label>
                         </div>
 
-
-                        <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="CheckP" onclick="filtrar()">
-                            <label class="form-check-label" for="defaultCheck6">Pepperoni</label>
-                        </div>
+                        
                     
                     </li>
-                    <li class="list-group-item">
-                        <h5>TAMAÑO</h5>
-                        <div class="form-check fuente ">
-                            <input class="form-check-input " type="checkbox" value="" id="Pequeña" onclick="filtrarTam()">
-                            <label class="form-check-label" for="defaultCheck7">Pequeña</label>
-                        </div>
-
-                        <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="Mediana" onclick="filtrarTam()">
-                            <label class="form-check-label" for="defaultCheck8">Mediana</label>
-                        </div>
-
-                        <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="Grande" onclick="filtrarTam()">
-                            <label class="form-check-label" for="defaultCheck9">Grande</label>
-                        </div>
-
-                        <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="Familiar" onclick="filtrarTam()">
-                            <label class="form-check-label" for="defaultCheck10">Familiar</label>
-                        </div>
-
-                    </li>
+                    
                     </ul>
                   </div>
             </article>
@@ -160,7 +134,22 @@
                           
                           <form class="form-inline my-2 my-lg-0">
                             
+            
                                 
+                                <div class="btn-group est" >
+                                    <button class="disabled btn btn-secondary btn-sm estilo"  type="button">
+                                      Ordenar por |
+                                    </button>
+                                    <button type="button" class=" btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="sr">
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item estilo" href="#">Popularidad</a>
+                                            <a class="dropdown-item estilo" href="#">Categorías</a>
+                                            <a class="dropdown-item estilo" href="#">Bajo Precio</a>
+                                            <a class="dropdown-item estilo" href="#">Alto Precio</a>  
+                                        </div>
+                                    </span>
+                                </div>
             
             
                                 <div class="btn-group est" >
@@ -170,11 +159,31 @@
                                     <button type="button" class=" btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                       <span class="sr">
                                         <div class="dropdown-menu">
-                                            <a class="dropdown-item estilo" href="#"><i class="fa fa-th nav-icon" onclick="verCuadricula()"></i>Cuadrícula</a>
-                                            <a class="dropdown-item estilo" href="#"><i class="fa fa-list nav-icon" onclick="verLista()"></i> Lista</a>
+                                            <a class="dropdown-item estilo" href="#"><i class="fa fa-th nav-icon"></i>Cuadrícula</a>
+                                            <a class="dropdown-item estilo" href="#"><i class="fa fa-list nav-icon"></i> Lista</a>
                                         </div>
                                     </span>
                                 </div>
+            
+            
+            
+                                <div class="btn-group est">
+                                    <button class=" disabled btn btn-secondary btn-sm estilo "  type="button">
+                                      Ver |
+                                    </button>
+                                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="sr">Por página
+                                        <div class="dropdown-menu custom-s">
+                                            <a class="dropdown-item estilo" data-target="1" href="#">12 Por página</a>
+                                            <a class="dropdown-item estilo" href="#">6 Por página</a>
+                                            <a class="dropdown-item estilo" href="#">4 Por página</a>
+                                          </div>
+                
+                                      </span>
+                                    </button>
+                                </div>
+            
+            
                           </form>
                         </div>
                       </nav>
@@ -182,81 +191,12 @@
                       </div>
 
                 <section class="row" id="Menu">
-                    <article id="listaQ" class="col-md-6">
-                        <div id="cardQ" class="cards">
-                            <img src="../../../img/pizzaqueso.png" class="img-fluid" alt="Responsive image">
+                    <article class="col-md-6">
+                        <div class="cards">
+                            <img src="../../../img/Combo6.png" class="img-fluid" alt="Responsive image" style="width: 90%;">
                             <hr>
-                          <h5>Pizza de Queso</h5>
-                          <h6 id="idQ">$7</h6>
-                            <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Ver
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a href="#">Detalle</a><br>
-                                <a href="#">Añadir a carrito</a>
-                                
-                                </div>
-                              </div>
-                        </div>
-                    </article>
-                    <article id="listaJQ" class="col-md-6">
-                        <div id="cardJQ" class="cards">
-                            <img src="../../../img/pizzaquesojamon.png" class="img-fluid" alt="Responsive image">
-                            <hr>
-                          <h5>Pizza jamón y queso</h5>
-                          <h6 id="idJQ">$7.95</h6>
-                          <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Ver
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#">Detalle</a><br>
-                            <a href="#">Añadir a carrito</a>
-                            </div>
-                          </div>
-                        </div>
-                    </article>
-                    <article id="listaPQ" class="col-md-6">
-                        <div id="cardPQ" class="cards">
-                            <img src="../../../img/pizza_peperoni.png" class="img-fluid tamaño1" alt="Responsive image">
-                            <hr>
-                          <h5>Pizza de Peperoni con queso</h5>
-                          <h6 id="idPQ">$7.95</h6>
-                          <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Ver
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#">Detalle</a><br>
-                            <a href="#">Añadir a carrito</a>
-                            </div>
-                          </div>
-                        </div>
-                    </article>
-                    <article id="listaHJQ" class="col-md-6">
-                        <div id="cardHJQ" class="cards">
-                            <img src="../../../img/Hawaina.png" class="img-fluid tamaño" alt="Responsive image">
-                            <hr>
-                          <h5>Pizza Hawaina, jamón y queso</h5>
-                          <h6 id="idHJQ">$9.42</h6>
-                          <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Ver
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#">Detalle</a><br>
-                            <a href="#">Añadir a carrito</a>
-                            </div>
-                          </div>
-                        </div>
-                    </article>
-                    <article id="listaC" class="col-md-6">
-                        <div id="cardC" class="cards">
-                            <img src="../../../img/pizzacriolla2.png" class="img-fluid" alt="Responsive image">
-                            <hr>
-                          <h5>Pizza Criolla</h5>
-                          <h6 id="idC">$9.50</h6>
+                          <h5>Dos pizzas (Peperoni) y Pepsi 2lt</h5>
+                          <h6>$6.59
                             <div class="btn-group">
                                 <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Ver
@@ -267,15 +207,15 @@
                                
                                  
                                 </div>
-                              </div>
+                              </div></h6>
                         </div>
                     </article>
-                    <article id="listaCJ" class="col-md-6">
-                        <div id="cardCJ" class="cards">
-                            <img src="../../../img/pizzacriolla.png" class="img-fluid" alt="Responsive image">
+                    <article class="col-md-6">
+                        <div class="cards">
+                            <img src="../../../img/Comboespecialvariado.png" class="img-fluid" alt="Responsive image">
                             <hr>
-                          <h5>Pizza Criolla de Jalapeño</h5>
-                          <h6 id="idCJ">$9.70</h6>
+                          <h5>Combo Especial 2 Pizzas</h5>
+                          <h6>$8
                             <div class="btn-group">
                                 <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   Ver
@@ -283,31 +223,73 @@
                                 <div class="dropdown-menu">
                                     <a href="#">Detalle</a><br>
                                 <a href="#">Añadir a carrito</a>
-                               
-                                 
                                 </div>
                               </div>
+                          </h6>
                         </div>
                     </article>
-                    <article id="listaPV" class="col-md-6">
-                        <div id="cardPV" class="cards">
-                            <img src="../../../img/pizza vegetales.png" class="img-fluid tamaño" alt="Responsive image">
+                    <article class="col-md-6">
+                        <div class="cards">
+                            <img src="../../../img/Combotripleespecial.png" class="img-fluid" alt="Responsive image" style="width: 100%;">
                             <hr>
-                          <h5>Pizza de Peperoni con vegetales</h5>
-                          <h6 id="idPV">$10</h6>
-                          <div class="btn-group">
-                            <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Ver
-                            </button>
-                            <div class="dropdown-menu">
-                                <a href="#">Detalle</a><br>
-                            <a href="#">Añadir a carrito</a>
-                            </div>
-                          </div>
+                          <h5>Combo Triple</h5>
+                          <h6>$10.65
+                            <div class="btn-group">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Ver
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="#">Detalle</a><br>
+                                <a href="#">Añadir a carrito</a>
+                                </div>
+                              </div>
+                          </h6>
                         </div>
-                       
                     </article>
-                    
+                    <article class="col-md-6">
+                        <div class="cards">
+                            <img src="../../../img/Combo Bonapetit.png" class="img-fluid" alt="Responsive image" style="width: 80%;">
+                            <hr>
+                          <h5>Combo Bon appetit!</h5>
+                          <h6>$22.97
+                            <div class="btn-group">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Ver
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="#">Detalle</a><br>
+                                <a href="#">Añadir a carrito</a>
+                                </div>
+                              </div>
+                          </h6>
+                         
+                        </div>
+                        <div class="Align">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#">&LeftAngleBracket;</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">4</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">5</a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">&RightAngleBracket;</a>
+                              </li>
+                            </ul>
+                          </div>
+                    </article>
                     
                 </section>
                 
