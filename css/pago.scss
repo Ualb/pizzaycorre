@@ -1,0 +1,425 @@
+$pizza-red: #a80e0e;
+$mustard: #ffaa00;
+$lg-mustard: #f9b826;
+$black: #281923;
+$lg-black: #343232;
+$enf-gray: #707070;
+
+
+.breadcrumb {
+    
+    margin-top: 30px;
+    background: #f3f3f3;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: $lg-mustard;
+        }
+
+        &:active {
+            color: $black;
+        }
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: ">";
+    }
+} 
+
+.content {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.btn-dark {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/**** THE COLLAPSE SASS ****/
+
+// titles of collapses
+
+.card {
+    .card-header {
+
+        background: white;
+
+        .mb-0 {
+            button {
+                text-decoration: none;
+                outline: none;
+                span {
+                    padding-left: 10px;
+                    color: black;
+                    font-weight: 600;
+                    font-size: 14px;
+                }
+
+                &:hover, &:focus, &:active  {
+                    outline: none;
+                    box-shadow: none;
+                }  
+            }
+        }
+    }
+}
+
+// collapse one
+#collapseOne {
+    .old-dir {
+        background: #f1f1f1;
+
+        &__description {
+            padding: 20px 25px;
+
+            .dir {
+                padding-bottom: 25px;
+            }
+
+            label {
+                margin: 0 0 10px 0;
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+        &__edit {
+            display: flex;
+            margin-top: 20px;
+            a {
+                margin-left: 10px;
+                margin-bottom: 10px;
+                color: $black;
+
+                &:hover {
+                    outline: none;
+                    text-decoration: none;
+                    color: $pizza-red;
+                }
+            }
+        }
+    }
+
+    .new-dir {
+        margin-top: 20px;
+
+        .top {
+            margin-top: 15px;
+        }
+    }
+
+    .button-end {
+        margin-top: 20px;
+        text-align: right;
+    }
+}
+
+// two collapse
+
+#collapseTwo {
+    .group-buttons {
+        padding-bottom: 30px;
+        margin: 20px;
+        border-bottom: 1px solid #dfdfdf;
+        .form-check:nth-child(2) {
+            margin-left: 40px;
+        }
+    }
+
+    .button-end {
+        text-align: right;
+    }
+}
+
+// three collapse
+
+#collapseThree {
+    .img {
+        margin-left: 0;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    form {
+        .tarjetNumber {
+            width: 420px;
+            margin-left: 5px;
+            margin-bottom: 15px;
+        }
+
+        #span-with-margin {
+            margin-bottom: 15px;
+        }
+
+        .collections {
+            width: 100%;
+
+            .custom-select {
+                margin-bottom: 15px;
+                max-width: 30%;
+            }
+
+            .form-control {
+                @extend .custom-select;
+            }
+
+            .custom-margin-left {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    #check-with-margin {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-top: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .button-end {
+        text-align: right;
+    }
+}
+
+// four collapse
+
+.car-list {
+    padding-bottom: 10px;
+
+    #{&}__product {
+        li {
+            margin-top: 30px;
+            list-style: none;
+            display: flex;
+            margin-bottom: 10px;
+            padding-bottom: 25px;
+            margin-right: 15px;
+
+            .car-list_product__img-product {
+                padding-left: 0;
+                padding-right: 0;
+                margin-right: 0;
+                margin-left: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                img {
+                    border: 1px solid #e3e3e3;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .car-list_product__detail-product {
+                h2 {
+                    margin-bottom: 15px;
+                    font-weight: 550;
+                    font-size: 19px;
+                }
+
+                .car-list_product__detail-product__cst-amount {
+                    display: flex;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+
+                    h4 {
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+
+                    div {
+                        // class amount
+                        display: flex;
+
+                        .amount-product {
+                            margin-left: 45px;
+                            margin-top: auto;
+                            margin-bottom: auto;
+                            margin-right: 10px;
+                        }
+
+                        input {
+                            border: 1px solid #e3e3e3;
+                            width: 80px;
+                            height: 33px;
+                            padding-left: 5px;
+
+                            &:hover {
+                                border: none;
+                            }
+
+                            &:focus {
+                                border: none;
+                            }
+                        }
+                    }
+                }
+
+                .shopping-time {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #529e34;
+                }
+            }
+
+            .car-list_product__delete-product {
+                width: auto;
+                text-align: right;
+            }
+
+            .btn {
+                color: black;
+
+                &:hover {
+                    text-decoration: none;
+                    outline: none;
+                    color: $pizza-red;
+                }
+
+                &:focus {
+                    text-decoration: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .buy-or-continue {
+        width: auto;
+        text-align: right;
+        align-items: center;
+
+        a {
+            padding-top: 10px;
+            margin-left: 8px;
+
+            &:hover {
+                outline: none;
+                text-decoration: none;
+            }
+        }
+
+        .buy {
+            width: 120px;
+            height: 45px;
+        }
+    }
+}
+
+// subtotal
+
+.sub-total {
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    #span-padding {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .cost-detail {
+        margin: 0;
+        padding: 0;
+        padding-left: 25px;
+
+        .cost-to-pay {
+            display: flex;
+            margin-top: 15px;
+
+            .right {
+                font-weight: 600;
+                margin-left: auto;
+                text-align: right;
+                margin-bottom: 15px;
+            }
+        }
+
+        .cost-to-sheppin {
+            @extend .cost-to-pay;
+        }
+    }
+}
+
+.total {
+    border-bottom: 1px solid #dfdfdf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .content-of-total {
+        display: flex;
+
+        .right {
+            text-align: right;
+            font-weight: 600;
+            margin-left: auto;
+        }
+    }
+}
+
+.pay {
+    text-align: right;
+    padding-top: 20px;
+}
+
+// right table
+
+.detail-list {
+    width: auto;
+
+    @media only screen and (max-width: 999px) {
+        margin-top: 25px;
+    }
+
+    // margin-top: 25px;
+
+    #{&}__title-detail {
+        width: auto;
+        border: 1px solid #506bfa;
+        color: white;
+        background: #506bfa;
+        padding: 20px 0 20px 20px;
+
+        h3 {
+            font-weight: 500;
+        }
+    }
+
+    #{&}__product-cost {
+        border-width: 0 1px 1px;
+        border-style: solid;
+        border-color: #e3e3e3;
+        padding: 20px 20px 20px 20px;
+        display: flex;
+        width: auto;
+
+        .black-span {
+            font-weight: 600;
+        }
+
+        .left {
+            width: 100%;
+        }
+
+        .right {
+            width: 100%;
+            text-align: right;
+        }
+    }
+
+    #{&}__shipping-cost {
+        @extend .detail-list__product-cost;
+    }
+
+    #{&}__total-cost {
+        @extend .detail-list__product-cost;
+    }
+}

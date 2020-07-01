@@ -17,9 +17,9 @@
 
     <!--Dependencias locales-->
 
+    <link rel="stylesheet" href="../../../css/orden-completada.css">
 
-
-    <title>Pizza y Corre | Orden</title>
+    <title>Pizza y Corre</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contactenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
                 </ul>
             </section>
             <section class="gnav-section navbar-nav">
@@ -53,6 +53,52 @@
 
     <!--Principal-->
     <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="car.html">Carrito</a></li>
+                        <li class="breadcrumb-item"><a href="pago.html">Pago</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">En Proceso</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row content">
+                <div class="imgs col-sm-12">
+                    <img src="../../../img/Group 3.png" alt="check">
+                </div>
+                <div class="titulos col-sm-12 text">
+                    <h1>MUCHAS GRACIAS POR ORDENAR</h1>
+                    <span>
+                        Su Orden fue Completada Correctamente
+                    </span>
+                    <span>
+                        Su Numero de Orden es: 30124564332
+                    </span>
+                </div>
+                <div class="subtitulos col-sm-12 text">
+                    <span>
+                    <img src="../../../img/invoice(2).png" alt="">
+                        Se enviara un recibo a tu correo registrado luego de que la orden sea despachada.
+                    </span>
+                    <span>
+                    <img src="../../../img/envelope(3).png" alt="">
+                        Recibiras informacion en tu correo sobre el estado de tu compra una vez esta sea despachada.
+                    </span>
+                </div>
+                <div class="col-sm-12 button-div">
+                    <button class="btn btn-dark" onclick="toMenu()">CONTINUAR COMPRANDO</button>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </main>
 
@@ -158,6 +204,7 @@
 
     <!--Scripts-->
     <script src="../../../js/main.js"></script>
+    <script src="../../../js/orden-completada.js"></script>
 </body>
 
 </html>

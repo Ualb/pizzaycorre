@@ -1,0 +1,60 @@
+.breadcrumb {
+  margin-top: 30px;
+  background: #f3f3f3;
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+.breadcrumb a:hover {
+  color: #f9b826;
+}
+.breadcrumb a:active {
+  color: #281923;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.btn-dark {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.container .content .imgs {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+.container .content .imgs img {
+  display: flex;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+.container .content .text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .content .text h1 {
+  font-weight: 600;
+}
+.container .content .text:nth-child(2) {
+  margin-top: 15px;
+}
+.container .content .titulos, .container .content .subtitulos {
+  margin-bottom: 15px;
+}
+.container .content .button-div {
+  margin-top: 20px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=orden-completada.css.map */
