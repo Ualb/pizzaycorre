@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/*Variables*/
+$pizza-red: #A80E0E;
+$mustard: #FFAA00;
+$lg-mustard: #F9B826;
+$black: #281923;
+$lg-black: #343232;
+$enf-gray: #707070;
+
+
+/*MAIN | Menu*/
+
+main{
+        
+ font-family: 'Montserrat', sans-serif;
+ 
+ width: 100%;
+
+ 
+
+ .row {
+    width: 100%;
+ 
+}
+ .search-bar{
+    
+    justify-content: right !important;
+    background-position: right !important;
+    background-color: white !important;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2.1rem;
+    
+    .size
+    {
+      width: 300px !important;   
+      font-size: 14px !important;
+      font-weight: 400 !important;
+    }
+
+    
+
+}
+
+
+.breadcrumb{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: #888;
+    content: ">";
+}
+
+#contenido{
+    padding: 25px 2.8%;
+
+    .navbar{
+        background-color: white !important;
+    }
+    .estilo{
+        background-color: whitesmoke;
+        font-style: $black !important;
+        font-weight: 400 !important;
+        
+
+        }  
+        .nav-icon {
+            font-size: 20px;
+            margin-right: 1em;
+        }
+    .content-card{
+        
+            margin: 50px 0;
+            margin-right: 0 ;
+            margin-left: 1rem ;
+            padding-left: 0;
+            .list-group-item:nth-child(2){
+                background: $pizza-red;
+                
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            h4 {
+                color: white;
+                font-weight: 600;
+            }
+            
+            h5{
+                font-weight: 600;
+                margin-top: 1rem;
+            }
+
+            h6{
+                margin-top: 1rem;
+                font-weight: 400;
+                
+            }
+
+            b{
+                word-spacing: 12.5rem;
+               
+            }
+
+
+            .valor:hover{
+                cursor: pointer;
+               
+                &:active{
+                    cursor: pointer;
+                }
+
+            }
+
+            .fuente{
+
+                font-weight: 600;
+            }
+
+            
+            
+
+
+        }
+           
+        
+
+            .col-md-9{
+                margin: 50px 0;
+                padding: 0 2em;
+                align-content: center;
+                
+              
+               h5{
+                    font-weight: 400;
+                    margin-top: 1rem;
+                }
+    
+                h6{
+                    font-weight: 400;
+                    color: $pizza-red;
+                    margin-top: 1rem;
+                    font-size: 2rem;
+                    margin-bottom: 0px;
+                   
+                   
+                }
+        
+
+                }
+
+                
+/*PARA PIZZA, CALZONE Y COMBOS*/
+                #Menu{
+                    img{
+                        width: 78%;
+                        border: 3px solid whitesmoke;
+                        
+                    }
+
+
+
+                    .cards{
+                        text-align: center;
+                        margin: 50px 0;
+                        margin-left: 15%;
+                        padding: 20px;
+                        border: 0.7px solid whitesmoke ;
+                        
+                       
+
+                        &:hover{
+                            
+                            transform: translate3d(1px,25px,30px);
+                            transform: rotate3d(30px,15px,10px);
+                            
+                          
+                            
+                        }
+
+                        
+                        .tamaño{
+                            width: 70%;
+                        
+                        }
+                        
+                        
+                        
+                        #styleBtn{
+                            font-weight: 400;
+                            color: $mustard;
+                            font-size: 18px;
+                            background-color: $black;
+                            width: 100px;
+
+                            
+
+
+                        }
+                        .dropdown-menu{
+                                
+                              background-color: whitesmoke !important;
+                              font-weight: 400 !important;
+                              font-style: $black;
+                              a{
+                                  margin: 1rem;
+                                  
+                              }
+                        }
+                        
+                        
+                        
+                            }
+
+                            
+                            
+.Align{
+    margin-top: 0em;
+    justify-self: center ;
+}
+                           
+                }
+
+                
+
+        
+            
+}
+
+
+
+
+
+}
+
+/*MAIN | DETALLE*/
+
+
+
+.botones{
+    justify-content: right !important;
+    background-position: right !important;
+    
+     .est{
+margin-right: .5rem;
+margin-left: .5rem;
+     }
+
+   
+}
+#Detalle{
+
+    
+
+    h4 {
+        color:$black;
+        font-weight: 600;
+    }
+
+    h5{
+        font-weight: 300;
+        font-size: 1rem;
+        margin-right: 0;
+        
+    
+    }
+
+   
+
+
+
+    h6{
+        color:$black;
+        font-weight: 600; 
+        font-size: 40px;
+
+
+        b{
+        color: $enf-gray;
+        font-weight: 300;
+        text-decoration: line-through;
+        margin-left: 1rem;
+        font-size: 30px;
+        }
+        
+     
+        
+    }
+    
+   .contein{
+    
+    margin: 50px 0;
+            margin-left: 20px;
+            margin-right: .5rem;
+            padding: 20px;
+            margin-top: 0 ;
+            padding-top: 0 ;
+    
+   }
+    .navbar{
+        background-color: white !important;
+    }
+    .estilo{
+        background-color: whitesmoke;
+        font-style: $black !important;
+        font-weight: 400 !important;
+        
+
+        }  
+
+        .nav-icon {
+            font-size: 20px;
+            margin-right: 1em;
+        }
+
+        img{
+            width: 75%;
+           
+            
+        }
+
+    
+        
+        .cards{
+            text-align: center;
+            margin: 50px 0;
+            
+            padding: 15px;
+            border: 0.7px solid whitesmoke ;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-bottom: 0;
+           
+        
+
+
+            
+        }
+
+        .cards-0{
+            text-align: center;
+            margin: 50px 0;
+            
+            padding: 15px;
+            
+            margin-left: 15%;
+            margin-right: 75%;
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-bottom: 0;
+
+           
+        
+
+
+            
+        }
+        
+
+        .cards-1{
+            text-align: left;
+            margin: 50px 0;
+            
+            padding: 25px;
+            
+            
+            margin-bottom: 1rem;
+            margin-top: 0 ;
+            padding-top: 0;
+            
+         
+
+
+            
+        }
+
+        .cards-2{
+            text-align: left;
+            margin: 50px 0;
+            
+            padding: 20px;
+            margin-left: 3.5%;
+            
+            margin-bottom: 1rem;
+          
+            padding-top: 0;
+            
+
+
+            
+        }
+
+
+
+.reajuste{
+    width: 50%;
+   
+    align-self: stretch;
+    align-items: stretch;
+    text-align: justify;
+
+
+}
+
+.compra{
+    margin-left: 20%;
+
+    margin-top: 10%;
+
+   
+   
+   
+}
+
+.btn{
+    font-weight: 600 ;
+
+    
+    
+}
+.fade{
+text-align: justify;
+margin: 2em;
+}
+
+.nav-icon-2{
+    font-size: 20px;
+    margin-right: 1em;
+    margin-top: 1em;
+    color: $lg-mustard;
+}
+        
+
+
+        #Align{
+            border: none;
+            margin-left: 10% ;
+            margin-right: 21.5% ;
+            margin-top: 0 ;
+            
+          
+            
+        .nav-icon {
+            font-size: 20px;
+            margin: 0;
+
+            
+            
+            }
+
+            
+        }
+
+       
+        .table{
+            width: 50%;
+            margin: 0;
+        }
+        
+
+        
+
+}
+
+
+/*Menú | Bebidas*/
+#Bebidas{
+   
+   
+
+    .cards-bebidas{
+        text-align: center;
+        margin: 50px 0;
+        margin-left: 15%;
+        padding: 20px;
+        border: 0.7px solid whitesmoke ;
+        
+        
+
+
+        &:hover{
+            
+            transform: translate3d(1px,25px,30px);
+            transform: rotate3d(30px,15px,10px);
+            
+          
+            
+        }
+}
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+// Extra small devices (phones, PDA's , less than 576px)
+@media (max-width: 576px) {
+   
+    
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .search-bar{
+        position: static;
+       
+    }
+
+   
+    
+    
+    
+}
+
+@media (max-width: 768px) {
+   
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    
+}
+
+@media (max-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    
+        
+}
+
+/*FULL HD devices*/
+@media(min-width: 1400px) {
+    
+}
+    
+
+
+
+

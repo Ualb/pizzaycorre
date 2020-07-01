@@ -1,0 +1,297 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+/*Variables*/
+/*MAIN | Menu*/
+main {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+main .row {
+  width: 100%;
+}
+main .search-bar {
+  justify-content: right !important;
+  background-position: right !important;
+  background-color: white !important;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2.1rem;
+}
+main .search-bar .size {
+  width: 300px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+main .breadcrumb {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+main .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #888;
+  content: ">";
+}
+main #contenido {
+  padding: 25px 2.8%;
+  /*PARA PIZZA, CALZONE Y COMBOS*/
+}
+main #contenido .navbar {
+  background-color: white !important;
+}
+main #contenido .estilo {
+  background-color: whitesmoke;
+  font-style: #281923 !important;
+  font-weight: 400 !important;
+}
+main #contenido .nav-icon {
+  font-size: 20px;
+  margin-right: 1em;
+}
+main #contenido .content-card {
+  margin: 50px 0;
+  margin-right: 0;
+  margin-left: 1rem;
+  padding-left: 0;
+}
+main #contenido .content-card .list-group-item:nth-child(2) {
+  background: #A80E0E;
+}
+main #contenido .content-card:first-child {
+  padding-left: 0;
+}
+main #contenido .content-card:last-child {
+  padding-right: 0;
+}
+main #contenido .content-card h4 {
+  color: white;
+  font-weight: 600;
+}
+main #contenido .content-card h5 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+main #contenido .content-card h6 {
+  margin-top: 1rem;
+  font-weight: 400;
+}
+main #contenido .content-card b {
+  word-spacing: 12.5rem;
+}
+main #contenido .content-card .valor:hover {
+  cursor: pointer;
+}
+main #contenido .content-card .valor:hover:active {
+  cursor: pointer;
+}
+main #contenido .content-card .fuente {
+  font-weight: 600;
+}
+main #contenido .col-md-9 {
+  margin: 50px 0;
+  padding: 0 2em;
+  align-content: center;
+}
+main #contenido .col-md-9 h5 {
+  font-weight: 400;
+  margin-top: 1rem;
+}
+main #contenido .col-md-9 h6 {
+  font-weight: 400;
+  color: #A80E0E;
+  margin-top: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+main #contenido #Menu img {
+  width: 78%;
+  border: 3px solid whitesmoke;
+}
+main #contenido #Menu .cards {
+  text-align: center;
+  margin: 50px 0;
+  margin-left: 15%;
+  padding: 20px;
+  border: 0.7px solid whitesmoke;
+}
+main #contenido #Menu .cards:hover {
+  transform: translate3d(1px, 25px, 30px);
+  transform: rotate3d(30px, 15px, 10px);
+}
+main #contenido #Menu .cards .tamaño {
+  width: 70%;
+}
+main #contenido #Menu .cards #styleBtn {
+  font-weight: 400;
+  color: #FFAA00;
+  font-size: 18px;
+  background-color: #281923;
+  width: 100px;
+}
+main #contenido #Menu .cards .dropdown-menu {
+  background-color: whitesmoke !important;
+  font-weight: 400 !important;
+  font-style: #281923;
+}
+main #contenido #Menu .cards .dropdown-menu a {
+  margin: 1rem;
+}
+main #contenido #Menu .Align {
+  margin-top: 0em;
+  justify-self: center;
+}
+
+/*MAIN | DETALLE*/
+.botones {
+  justify-content: right !important;
+  background-position: right !important;
+}
+.botones .est {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#Detalle h4 {
+  color: #281923;
+  font-weight: 600;
+}
+#Detalle h5 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-right: 0;
+}
+#Detalle h6 {
+  color: #281923;
+  font-weight: 600;
+  font-size: 40px;
+}
+#Detalle h6 b {
+  color: #707070;
+  font-weight: 300;
+  text-decoration: line-through;
+  margin-left: 1rem;
+  font-size: 30px;
+}
+#Detalle .contein {
+  margin: 50px 0;
+  margin-left: 20px;
+  margin-right: 0.5rem;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+#Detalle .navbar {
+  background-color: white !important;
+}
+#Detalle .estilo {
+  background-color: whitesmoke;
+  font-style: #281923 !important;
+  font-weight: 400 !important;
+}
+#Detalle .nav-icon {
+  font-size: 20px;
+  margin-right: 1em;
+}
+#Detalle img {
+  width: 75%;
+}
+#Detalle .cards {
+  text-align: center;
+  margin: 50px 0;
+  padding: 15px;
+  border: 0.7px solid whitesmoke;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+#Detalle .cards-0 {
+  text-align: center;
+  margin: 50px 0;
+  padding: 15px;
+  margin-left: 15%;
+  margin-right: 75%;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 0;
+}
+#Detalle .cards-1 {
+  text-align: left;
+  margin: 50px 0;
+  padding: 25px;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+#Detalle .cards-2 {
+  text-align: left;
+  margin: 50px 0;
+  padding: 20px;
+  margin-left: 3.5%;
+  margin-bottom: 1rem;
+  padding-top: 0;
+}
+#Detalle .reajuste {
+  width: 50%;
+  align-self: stretch;
+  align-items: stretch;
+  text-align: justify;
+}
+#Detalle .compra {
+  margin-left: 20%;
+  margin-top: 10%;
+}
+#Detalle .btn {
+  font-weight: 600;
+}
+#Detalle .fade {
+  text-align: justify;
+  margin: 2em;
+}
+#Detalle .nav-icon-2 {
+  font-size: 20px;
+  margin-right: 1em;
+  margin-top: 1em;
+  color: #F9B826;
+}
+#Detalle #Align {
+  border: none;
+  margin-left: 10%;
+  margin-right: 21.5%;
+  margin-top: 0;
+}
+#Detalle #Align .nav-icon {
+  font-size: 20px;
+  margin: 0;
+}
+#Detalle .table {
+  width: 50%;
+  margin: 0;
+}
+
+/*Menú | Bebidas*/
+#Bebidas .cards-bebidas {
+  text-align: center;
+  margin: 50px 0;
+  margin-left: 15%;
+  padding: 20px;
+  border: 0.7px solid whitesmoke;
+}
+#Bebidas .cards-bebidas:hover {
+  transform: translate3d(1px, 25px, 30px);
+  transform: rotate3d(30px, 15px, 10px);
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 768px) {
+  .search-bar {
+    position: static;
+  }
+}
+/*FULL HD devices*/
+
+/*# sourceMappingURL=menu.css.map */
