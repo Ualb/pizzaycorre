@@ -102,6 +102,9 @@ main {
         .direction {
             padding: 2em;
             border: 1px solid #ccc;
+            animation: hide_direction .5s linear;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
             h4{
                 font-weight: 600;
             }
@@ -119,6 +122,16 @@ main {
                 }
             }
         }
+    }
+}
+
+@keyframes hide_direction{
+    from{
+        opacity: 1;
+        
+    }
+    to{
+        opacity: 0;
     }
 }
 

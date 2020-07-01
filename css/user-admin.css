@@ -76,6 +76,9 @@ main #user-main .order .order-details span {
 main #user-main .direction {
   padding: 2em;
   border: 1px solid #ccc;
+  animation: hide_direction 0.5s linear;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
 }
 main #user-main .direction h4 {
   font-weight: 600;
@@ -92,6 +95,14 @@ main #user-main .direction .d-flex .direction-btns a:hover {
   color: #506BFA;
 }
 
+@keyframes hide_direction {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media (max-width: 576px) {
   .grid-container {
     grid-template-columns: auto !important;

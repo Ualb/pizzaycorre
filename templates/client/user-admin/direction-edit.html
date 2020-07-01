@@ -70,7 +70,7 @@
             <section class="col-lg-8 mt-4">
                 <div id="user-main">
                     <section class="col-12">
-                        <form action="#">
+                        <form action="#" method="POST" onsubmit="return validateForm()" enctype="multipart/form-data">
                             <div class="row mb-5">
                                 <div class="col-12" style="padding: 0 3em; margin-top: 2em;">
                                     <h6>Editar Dirección</h6>
@@ -79,32 +79,36 @@
                                         <div class="form-group">
                                             <input type="text" name="dir-ref" id="dir-ref" class="form-control"
                                                 placeholder="Dirección">
+                                            <div class="invalid-feedback">Direccion obligatoria</div>
                                         </div>
                                         <div class="form-group">
                                             <select name="dpto" id="dpto" class="form-control">
-                                                <option disabled selected>Departamento</option>
+                                                <option disabled selected value="0">Departamento</option>
                                                 <option value="Managua">Managua</option>
                                                 <option value="Masaya">Masaya</option>
                                             </select>
+                                            <div class="invalid-feedback">Por favor seleccione un departamento</div>
                                         </div>
                                         <div class="form-group">
                                             <select name="municipio" id="municipio" class="form-control" disabled>
-                                                <option selected disabled>Municipio</option>
+                                                <option selected disabled value="0">Municipio</option>
                                             </select>
+                                            <div class="invalid-feedback">Por favor seleccione un municipio</div>
                                         </div>
                                         <div class="form-group">
                                             <input type="number" name="no-casa" id="no-casa" class="form-control"
                                                 placeholder="N° de casa">
+                                            <div class="invalid-feedback">Ingrese un número de casa</div>
                                         </div>
                                         <div class="form-group">
                                             <label for="">Selecciona tu ubicación (opcional)</label>
                                             <div id="map"></div>
-                                            <input type="text" id="lat" readonly="yes" class="form-control">
-                                            <input type="text" id="lng" readonly="yes" class="form-control">
+                                            <input type="text" id="lat" readonly="yes" class="form-control not-req">
+                                            <input type="text" id="lng" readonly="yes" class="form-control not-req">
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <button type="submit" class="btn btn-block btn-danger">Editar</button>
                             </div>
                         </form>
@@ -221,6 +225,7 @@
         defer></script>
     <script src="../../../js/main.js"></script>
     <script src="../../../js/map-selector.js"></script>
+    <script src="../../../js/dirform-val.js"></script>
 </body>
 
 </html>

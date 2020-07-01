@@ -69,64 +69,61 @@ function validateForm() {
     let fl = true;
 
     document.querySelectorAll("#form-user input").forEach(elem => {
-        if(!elem.classList.contains("not-req")){
-            if (elem.value=="" || !elem.checkValidity()) {
-                if(elem.id=="password2"){ 
-                    if(elem.value == ""){
-                        document.querySelector("#pswdconfirm-fb").innerHTML="Confirme la contraseña";
+        if (!elem.classList.contains("not-req")) {
+            if (elem.value == "" || !elem.checkValidity()) {
+                if (elem.id == "password2") {
+                    if (elem.value == "") {
+                        document.querySelector("#pswdconfirm-fb").innerHTML = "Confirme la contraseña";
                     }
                 }
                 fl = false;
                 elem.classList.add("is-invalid");
-            }
-            else{
+            } else {
                 elem.classList.remove("is-invalid");
             }
         }
     });
 
-    if(document.querySelector("#password").value != document.querySelector("#password2").value){
-        document.querySelector("#pswdconfirm-fb").innerHTML="Las contraseñas no coinciden";
+    if (document.querySelector("#password").value != document.querySelector("#password2").value) {
+        document.querySelector("#pswdconfirm-fb").innerHTML = "Las contraseñas no coinciden";
         document.querySelector("#password2").classList.add("is-invalid");
-        fl=false;
+        fl = false;
     }
 
     document.querySelectorAll("#form-user select").forEach(elem => {
         console.log(elem.id);
-        if(!elem.classList.contains("not-req")){
-            if (elem.value=="0" || !elem.checkValidity()) {
+        if (!elem.classList.contains("not-req")) {
+            if (elem.value == "0" || !elem.checkValidity()) {
                 fl = false;
                 elem.classList.add("is-invalid");
-            }
-            else{
+            } else {
                 elem.classList.remove("is-invalid");
             }
         }
     });
 
-    if(!document.querySelector("#not-now").checked){
+    if (!document.querySelector("#not-now").checked) {
         document.querySelectorAll("#form-direction input").forEach(elem => {
-            if(!elem.classList.contains("not-req")){
-                if (elem.value=="" || !elem.checkValidity()) {
+            if (!elem.classList.contains("not-req")) {
+                if (elem.value == "" || !elem.checkValidity()) {
                     fl = false;
                     elem.classList.add("is-invalid");
-                }
-                else{
+                } else {
                     elem.classList.remove("is-invalid");
                 }
             }
-            document.querySelectorAll("#form-direction select").forEach(elem => {
-                console.log(elem.id);
-                if(!elem.classList.contains("not-req")){
-                    if (elem.value=="0" || !elem.checkValidity()) {
-                        fl = false;
-                        elem.classList.add("is-invalid");
-                    }
-                    else{
-                        elem.classList.remove("is-invalid");
-                    }
+
+        });
+        document.querySelectorAll("#form-direction select").forEach(elem => {
+            console.log(elem.id);
+            if (!elem.classList.contains("not-req")) {
+                if (elem.value == "0" || !elem.checkValidity()) {
+                    fl = false;
+                    elem.classList.add("is-invalid");
+                } else {
+                    elem.classList.remove("is-invalid");
                 }
-            });
+            }
         });
     }
 
