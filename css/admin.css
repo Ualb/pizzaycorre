@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+/*Variables*/
+/*Componentes*/
+/*ADMIN*/
+/*body*/
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+/*Barra lateral*/
+.sidebar-sticky {
+  display: block;
+  background-color: #FFAA00;
+  position: sticky;
+  top: 0;
+  height: calc(100vh -40px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 188.5px;
+  height: 617px; }
+  .sidebar-sticky .nav-item {
+    padding: 3%; }
+    .sidebar-sticky .nav-item:hover {
+      cursor: pointer;
+      background-color: #F9B826; }
+    .sidebar-sticky .nav-item .nav-link {
+      color: #fff;
+      font-weight: 400;
+      font-size: 14px; }
+
+/*MAIN*/
+
+/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/*Variables*/
+$pizza-red: #A80E0E;
+$mustard: #FFAA00;
+$lg-mustard: #F9B826;
+$black: #281923;
+$lg-black: #343232;
+$enf-gray: #707070;
+
+/*Componentes*/
+/*ADMIN*/
+
+/*body*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Barra lateral*/
+
+.sidebar-sticky{
+    display: block;
+   background-color: $mustard;
+   
+   position: sticky;
+   top: 0;
+   height: calc(100vh -40px);
+   overflow-x: hidden;
+   overflow-y: auto;
+   width: 188.5px;
+   height: 617px;
+    .nav-item{
+        padding: 3%;
+        &:hover{
+            cursor: pointer;
+            background-color: $lg-mustard;
+        }
+
+        .nav-link{
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+
+        }
+        
+    }
+}
+/*MAIN*/
+
+
