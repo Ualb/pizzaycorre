@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../../../css/admin-style.css">
 
 
-    <title>Pizza y Corre | Admin</title>
+    <title>Pizza y Corre | Admin-Menú</title>
 </head>
 
 <body>
@@ -62,8 +62,58 @@
             </nav>
 
             <!-- contenido de la página -->
-            <div class="container">
-                <h1>brother</h1>
+            <div class="container" id="Menu">
+                <ol class="breadcrumb" >
+            
+                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="#">Menú</a></li>
+                    <li class="breadcrumb-item active">Pizzas</li>
+                  </ol>
+
+                  <h1>Información del Producto</h1>
+                  <section>
+                      <form>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Nombreprodhelp" placeholder="Nombre del producto*">
+                      <div class="form-group spacing">
+                        <select class="custom-select">
+                          <option selected="">Categorías</option>
+                          <option value="1">Pizza</option>
+                          <option value="2">Bebidas</option>
+                          <option value="3">Calzone</option>
+                          <option value="4">Combo</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Nombreprodhelp" placeholder="Precio del Producto">
+                      
+                      <div class="form-group spacing">
+                        
+                        <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Descripción*"></textarea>
+                      </div>
+                        </div>
+                        
+                       
+                    </form>
+            
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile02">
+                            <label class="custom-file-label" for="inputGroupFile02">Elegir Imagen</label>
+                          </div>
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="">Subir Imagen</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="agregar">
+                        <button type="submit" class="btn btn-dark">AGREGAR PRODUCTO</button>
+                        
+                    </div>
+                </section>
+
+                
             </div>
         </div>
         <!-- /#page-content-wrapper -->

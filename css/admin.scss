@@ -14,8 +14,8 @@ $enf-gray: #707070;
 /*body*/
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: grayscale($color: #eceaea) ;
 }
-
 
 /*Barra lateral*/
 
@@ -48,8 +48,83 @@ body {
 }
 /*MAIN*/
 
+.breadcrumb{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    background-color: white;
+   .breadcrumb-item{
+       a{
+           color: $black;
+       }
+    color: $black !important;
+   }
+}
 
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: $black;
+    content: ">";
+}
 
+h1{
+    margin-left: 3rem;
+}
+
+section{
+    padding: 25px 4.5%;
+    .form-group{
+        font-weight: 400;
+        color: $black;
+        text-align: justify !important;
+    }
+    .form-control{
+        width: 50%;
+        color: $black !important;
+        font-weight: 400 !important;
+        &::placeholder{
+            color: $black !important;
+            font-weight: 400;
+        }
+
+    }
+
+    .spacing{
+        padding-top: 1rem;
+        .custom-select{
+            color: $black;
+            width: 50%;
+
+        }
+    }
+
+    .input-group{
+        width: 50%;
+    }
+
+    .custom-file-label{
+        font-weight: 400;
+        color: $black !important;
+    }
+
+.agregar{
+    margin-left: 10%;
+
+    .btn{
+        justify-self: center;
+        width: 30%;
+        background-color: $black !important;
+        color: white;
+        font-weight: 600 !important;
+    }
+}
+    
+}
 
 
 @media (min-width: 768px) {
