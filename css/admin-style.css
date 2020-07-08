@@ -1,0 +1,98 @@
+* {
+  font-family: "Montserrat", sans-serif; 
+}
+
+#wrapper {
+    overflow-x: hidden;
+ }
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0; 
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%; 
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+#barra-top {
+  background: url("../img/navbar-bg.png") !important;
+  background-size: 130% 100% !important;
+  height: 57px;
+}
+
+.sidebar-heading{
+  background: #E49800;
+  color: white;  
+  font-weight: 500; 
+} 
+
+.slice {
+  background: #FFAA00;
+  color: white; 
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 14px;
+}
+
+.slice-two {
+  background: #FFAA00;
+}
+
+.slice:hover {
+  background: #E49800;
+  color: white; 
+}
+
+.slice:active {
+  background: #E49800;
+  color: white;
+  border-left: 2px solid #A3A0FB;
+}
+
+.slice:focus {
+  background: #E49800;
+  color: white;
+  border-left: 2px solid #A3A0FB;
+}
+
+.png {
+  width: 15px;
+  margin-right: 3px;
+}
+
+.text-direction {
+  text-align: right;
+}
