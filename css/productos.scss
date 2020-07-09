@@ -1,57 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 /*Variables*/
-$pizza-red: #A80E0E;
-$mustard: #FFAA00;
-$lg-mustard: #F9B826;
+$pizza-red: #a80e0e;
+$mustard: #ffaa00;
+$lg-mustard: #f9b826;
 $black: #281923;
 $lg-black: #343232;
 $enf-gray: #707070;
-$gray:grayscale($color: #eceaea);
+$gray: grayscale(
+    $color: #eceaea,
+);
 /*Componentes*/
 /*ADMIN*/
 
 /*body*/
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: $gray;
 }
-
-
-
-/*MAIN*/
-
 
 /*Productos*/
 /*1. Principal*/
 .master {
     background: rgb(240, 240, 247);
 }
-.breadcrumb{
+
+.breadcrumb {
     font-size: 15px !important;
     font-weight: 400 !important;
-    text-transform: none !important;
-   margin-top: 3rem;
+    text-transform: none !important; 
     background-color: white;
-   .breadcrumb-item{
-       a{
-           color: $black;
-       }
-    color: $black !important;
-   }
+    margin-top: 15px;
+    .breadcrumb-item {
+        a {
+            color: $black;
+        }
+        color: $black !important;
+    }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    display: inline-block;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    color: $black;
     content: ">";
-} 
-
+}
 
 .my-img {
-    width: 100px; 
+    width: 100px;
     margin-top: 18px;
 }
 
@@ -60,7 +53,7 @@ h2 {
     font-size: 22px;
 }
 
-.card { 
+.card {
     margin: 10px auto;
     background: white;
     height: 100px;
@@ -80,14 +73,10 @@ p + span {
     font-weight: 550;
 }
 
-.Title{
+.Title {
     font-weight: 600;
-    font-style: $black ;
+    font-style: $black;
     font-size: 14px;
-}
-
-.ajustar{
-    padding-left: 5.5rem;
 }
 
 
@@ -96,4 +85,18 @@ p + span {
         position: sticky;
         top: 0;
         z-index: 999;
-    }}
+    }
+}
+
+.content {
+    margin-top: 6px;
+}
+
+.end-content {
+    display: flex; 
+    font-size: 14px;
+}
+ .ajustar {
+    margin-top: 6px;
+    margin-left: 15px;
+ }
