@@ -4,8 +4,7 @@
 /*ADMIN*/
 /*body*/
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #ebebeb; }
+  font-family: 'Montserrat', sans-serif; }
 
 /*Barra lateral*/
 .sidebar-sticky {
@@ -29,61 +28,6 @@ body {
       font-size: 14px; }
 
 /*MAIN*/
-.breadcrumb {
-  font-size: 15px !important;
-  font-weight: 400 !important;
-  text-transform: none !important;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  margin-top: 3rem;
-  background-color: white; }
-  .breadcrumb .breadcrumb-item {
-    color: #281923 !important; }
-    .breadcrumb .breadcrumb-item a {
-      color: #281923; }
-
-.breadcrumb-item + .breadcrumb-item::before {
-  display: inline-block;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  color: #281923;
-  content: ">"; }
-
-h1 {
-  margin-left: 3rem; }
-
-section {
-  padding: 25px 4.5%; }
-  section .form-group {
-    font-weight: 400;
-    color: #281923;
-    text-align: justify !important; }
-  section .form-control {
-    width: 50%;
-    color: #281923 !important;
-    font-weight: 400 !important; }
-    section .form-control::placeholder {
-      color: #281923 !important;
-      font-weight: 400; }
-  section .spacing {
-    padding-top: 1rem; }
-    section .spacing .custom-select {
-      color: #281923;
-      width: 50%; }
-  section .input-group {
-    width: 50%; }
-  section .custom-file-label {
-    font-weight: 400;
-    color: #281923 !important; }
-  section .agregar {
-    margin-left: 10%; }
-    section .agregar .btn {
-      justify-self: center;
-      width: 30%;
-      background-color: #281923 !important;
-      color: white;
-      font-weight: 600 !important; }
-
 @media (min-width: 768px) {
   .sidebar-sticky {
     position: sticky;
