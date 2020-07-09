@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/*Variables*/
+$pizza-red: #A80E0E;
+$mustard: #FFAA00;
+$lg-mustard: #F9B826;
+$black: #281923;
+$lg-black: #343232;
+$enf-gray: #707070;
+$gray:grayscale($color: #eceaea);
+/*Componentes*/
+/*ADMIN*/
+
+/*body*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $gray;
+}
+
+
+
+/*MAIN*/
+
+
+/*Productos*/
+/*1. Principal*/
+.master {
+    background: rgb(240, 240, 247);
+}
+.breadcrumb{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+   margin-top: 3rem;
+    background-color: white;
+   .breadcrumb-item{
+       a{
+           color: $black;
+       }
+    color: $black !important;
+   }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: $black;
+    content: ">";
+} 
+
+
+.my-img {
+    width: 100px; 
+    margin-top: 18px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.card { 
+    margin: 10px auto;
+    background: white;
+    height: 100px;
+}
+
+p {
+    margin-top: 5px;
+    font-weight: 550;
+}
+
+span {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+p + span {
+    font-weight: 550;
+}
+
+.Title{
+    font-weight: 600;
+    font-style: $black ;
+    font-size: 14px;
+}
+
+.ajustar{
+    padding-left: 5.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .sidebar-sticky {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }}
