@@ -79,7 +79,7 @@ body {
 
 
 .my-img {
-    width: 50px; 
+    width: 100px; 
     margin-top: 18px;
 }
 
@@ -95,16 +95,27 @@ h2 {
 }
 
 p {
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: 550;
 }
 
 span {
-    margin-top: 10px; 
+    font-weight: 300;
+    font-size: 12px;
 }
 
 p + span {
     font-weight: 550;
+}
+
+.Title{
+    font-weight: 600;
+    font-style: $black ;
+    font-size: 14px;
+}
+
+.ajustar{
+    padding-left: 5.5rem;
 }
 
 
