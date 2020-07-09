@@ -7,7 +7,7 @@ $lg-mustard: #F9B826;
 $black: #281923;
 $lg-black: #343232;
 $enf-gray: #707070;
-
+$gray:grayscale($color: #eceaea) ;
 /*Componentes*/
 /*ADMIN*/
 
@@ -125,7 +125,6 @@ section{
 }
     
 }
-
 
 @media (min-width: 768px) {
     .sidebar-sticky {
