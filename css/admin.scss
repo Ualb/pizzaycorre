@@ -49,6 +49,84 @@ body {
 /*MAIN*/
 
 
+/*Promociones*/
+/*1. Principal*/
+.Word{
+    font-size: 16px !important;
+      font-weight: 600 !important;
+      font-style: $black !important;
+      padding-right: 15.3rem;
+}
+
+.search-bar{
+    
+    justify-content: right !important;
+    background-position: right !important;
+    background-color: grayscale($color: #eceaea);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.8rem;
+    .size
+    {
+      width: 400px !important;   
+      font-size: 14px !important;
+      font-weight: 400 !important;
+    }
+
+
+}
+
+
+.row{
+    width: 100%;
+}
+.card{
+    margin-left: 0;
+    padding-left: 0;
+    border: none;
+    background-color: white;
+    width: 50%;
+    .card-header{
+border: none;
+background-color: white;
+    }
+    b{
+        margin: 0;
+        font-size: 16px !important;
+        font-weight: 600;
+        color: $black;
+    }
+}
+
+.col-md-3{
+    background-color: white;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+.cards-1{
+
+text-align: center;
+
+background-color: white;
+margin-bottom: 1rem;
+margin-top: 0 ;
+padding-top: 0;
+margin-right: 0;
+padding-right: 0;
+      
+}
+.cards-2{
+    margin-bottom: 1rem;
+    margin-top: 0 ;
+    padding-top: 0;
+    text-align: right;
+}
+img{
+    width: 70%;
+}
+
+
 
 
 
