@@ -52,13 +52,14 @@ body {
 
 /*Promociones*/
 /*1. Principal*/
+.master {
+    background: rgb(240, 240, 247);
+}
 .breadcrumb{
     font-size: 15px !important;
     font-weight: 400 !important;
     text-transform: none !important;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 3rem;
+   margin-top: 3rem;
     background-color: white;
    .breadcrumb-item{
        a{
@@ -74,111 +75,37 @@ body {
     padding-left: 2rem;
     color: $black;
     content: ">";
+} 
+
+
+.my-img {
+    width: 50px; 
+    margin-top: 18px;
 }
 
-.Word{
-    font-size: 16px !important;
-      font-weight: 600 !important;
-      font-style: $black !important;
-      padding-right: 15.3rem;
+h2 {
+    font-weight: 500;
+    font-size: 22px;
 }
 
-.search-bar{
-    margin-left: 5%;
-    justify-content: right !important;
-    background-position: right !important;
-    background-color: grayscale($color: #eceaea);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 1.8rem;
-    .navbar-brand{
-       justify-self: left !important;
-       justify-content: left !important;
-       justify-items: left !important;
-    }
-    .form-inline{
-        margin-left: 14rem;
-    }
-    .size
-    {
-      width: 300px !important;   
-      font-size: 14px !important;
-      font-weight: 400 !important;
-      
-    }
-
-
+.card { 
+    margin: 10px auto;
+    background: white;
+    height: 100px;
 }
 
-
-.row{
-    width: 100%;
-}
-.card{
-   margin-top: 1rem;
-    border: none;
-    background-color: white;
-    width: 50%;
-    
-    .card-header{
-border: none;
-background-color: white;
-    }
-    b{
-        margin: 0;
-        font-size: 16px !important;
-        font-weight: 600;
-        color: $black;
-    }
-    .color{
-        margin-left: 53%;
-        color: $enf-gray;
-    }
-    a{
-        margin-left: 5%;
-        color: $enf-gray;
-    }
+p {
+    margin-top: 10px;
+    font-weight: 550;
 }
 
-.col-md-3{
-    background-color: white;
-    text-align: center;
-    margin-left: 4rem;
- margin-top: 1rem;
-    
+span {
+    margin-top: 10px; 
 }
 
-.cards-1{
-
-text-align: center;
-margin-left: 20%;
-background-color: white;
-margin-bottom: 1rem;
-margin-top: 0 ;
-padding-top: 0;
-margin-right: 0;
-padding-right: 0;
-      
+p + span {
+    font-weight: 550;
 }
-.cards-2{
-    margin-bottom: 1rem;
-    margin-top: 0 ;
-    padding-top: 0;
-    text-align: right;
-}
-img{
-    width: 90%;
-}
-
-.float-right{
-    position: sticky;
-    top: 70%;
-    left: 70%;
-    position: fixed;
-
-
-}
-
 
 
 @media (min-width: 768px) {

@@ -31,12 +31,13 @@ body {
 /*MAIN*/
 /*Promociones*/
 /*1. Principal*/
+.master {
+  background: #f0f0f7; }
+
 .breadcrumb {
   font-size: 15px !important;
   font-weight: 400 !important;
   text-transform: none !important;
-  margin-left: 3rem;
-  margin-right: 3rem;
   margin-top: 3rem;
   background-color: white; }
   .breadcrumb .breadcrumb-item {
@@ -51,84 +52,28 @@ body {
   color: #281923;
   content: ">"; }
 
-.Word {
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  font-style: #281923 !important;
-  padding-right: 15.3rem; }
+.my-img {
+  width: 50px;
+  margin-top: 18px; }
 
-.search-bar {
-  margin-left: 5%;
-  justify-content: right !important;
-  background-position: right !important;
-  background-color: #ebebeb;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-right: 1.8rem; }
-  .search-bar .navbar-brand {
-    justify-self: left !important;
-    justify-content: left !important;
-    justify-items: left !important; }
-  .search-bar .form-inline {
-    margin-left: 14rem; }
-  .search-bar .size {
-    width: 300px !important;
-    font-size: 14px !important;
-    font-weight: 400 !important; }
-
-.row {
-  width: 100%; }
+h2 {
+  font-weight: 500;
+  font-size: 22px; }
 
 .card {
-  margin-top: 1rem;
-  border: none;
-  background-color: white;
-  width: 50%; }
-  .card .card-header {
-    border: none;
-    background-color: white; }
-  .card b {
-    margin: 0;
-    font-size: 16px !important;
-    font-weight: 600;
-    color: #281923; }
-  .card .color {
-    margin-left: 53%;
-    color: #707070; }
-  .card a {
-    margin-left: 5%;
-    color: #707070; }
+  margin: 10px auto;
+  background: white;
+  height: 100px; }
 
-.col-md-3 {
-  background-color: white;
-  text-align: center;
-  margin-left: 4rem;
-  margin-top: 1rem; }
+p {
+  margin-top: 10px;
+  font-weight: 550; }
 
-.cards-1 {
-  text-align: center;
-  margin-left: 20%;
-  background-color: white;
-  margin-bottom: 1rem;
-  margin-top: 0;
-  padding-top: 0;
-  margin-right: 0;
-  padding-right: 0; }
+span {
+  margin-top: 10px; }
 
-.cards-2 {
-  margin-bottom: 1rem;
-  margin-top: 0;
-  padding-top: 0;
-  text-align: right; }
-
-img {
-  width: 90%; }
-
-.float-right {
-  position: sticky;
-  top: 70%;
-  left: 70%;
-  position: fixed; }
+p + span {
+  font-weight: 550; }
 
 @media (min-width: 768px) {
   .sidebar-sticky {
