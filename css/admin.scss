@@ -7,13 +7,14 @@ $lg-mustard: #F9B826;
 $black: #281923;
 $lg-black: #343232;
 $enf-gray: #707070;
-
+$gray:grayscale($color: #eceaea);
 /*Componentes*/
 /*ADMIN*/
 
 /*body*/
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: $gray;
 }
 
 
@@ -51,6 +52,30 @@ body {
 
 /*Promociones*/
 /*1. Principal*/
+.breadcrumb{
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    background-color: white;
+   .breadcrumb-item{
+       a{
+           color: $black;
+       }
+    color: $black !important;
+   }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    color: $black;
+    content: ">";
+}
+
 .Word{
     font-size: 16px !important;
       font-weight: 600 !important;
@@ -59,18 +84,27 @@ body {
 }
 
 .search-bar{
-    
+    margin-left: 5%;
     justify-content: right !important;
     background-position: right !important;
     background-color: grayscale($color: #eceaea);
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 1.8rem;
+    .navbar-brand{
+       justify-self: left !important;
+       justify-content: left !important;
+       justify-items: left !important;
+    }
+    .form-inline{
+        margin-left: 14rem;
+    }
     .size
     {
-      width: 400px !important;   
+      width: 300px !important;   
       font-size: 14px !important;
       font-weight: 400 !important;
+      
     }
 
 
@@ -81,11 +115,11 @@ body {
     width: 100%;
 }
 .card{
-    margin-left: 0;
-    padding-left: 0;
+   margin-top: 1rem;
     border: none;
     background-color: white;
     width: 50%;
+    
     .card-header{
 border: none;
 background-color: white;
@@ -96,18 +130,28 @@ background-color: white;
         font-weight: 600;
         color: $black;
     }
+    .color{
+        margin-left: 53%;
+        color: $enf-gray;
+    }
+    a{
+        margin-left: 5%;
+        color: $enf-gray;
+    }
 }
 
 .col-md-3{
     background-color: white;
     text-align: center;
-    margin-left: 2rem;
+    margin-left: 4rem;
+ margin-top: 1rem;
+    
 }
 
 .cards-1{
 
 text-align: center;
-
+margin-left: 20%;
 background-color: white;
 margin-bottom: 1rem;
 margin-top: 0 ;
@@ -123,7 +167,7 @@ padding-right: 0;
     text-align: right;
 }
 img{
-    width: 70%;
+    width: 90%;
 }
 
 
