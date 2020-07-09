@@ -1,0 +1,68 @@
+.master {
+  background: #f0f0f7;
+}
+
+.bread {
+  margin-top: 10px;
+}
+
+.breadcrumb {
+  background: white;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.my-img {
+  width: 83px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.my-card {
+  margin-top: 10px;
+}
+
+.content {
+  margin-top: 25px;
+  margin-left: 11px;
+  padding-bottom: 25px;
+}
+.content .ultimo {
+  text-align: right;
+}
+.content .ultimo p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1px;
+}
+.content .ultimo #price {
+  margin-top: 150px;
+}
+
+p + p {
+  margin: 2px auto;
+  font-weight: 550;
+}
+
+#search {
+  margin: 0 auto 1px auto;
+}
+
+.dir {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.end-line {
+  margin-top: 8px;
+  text-align: right;
+}
+
+/*# sourceMappingURL=orden-proceso-admin.css.map */
