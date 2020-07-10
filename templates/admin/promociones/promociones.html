@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dependencias generales vendor-->
+    <link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
+    <script src="../../../vendor/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../../vendor/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../vendor/css/fontawesome-all.min.css">
+    <script src="../../../vendor/js/fontawesome-all.min.js"></script>
+
+    <!--Dependencias generales-->
+    <link rel="stylesheet" href="../../../css/general.css">
+    <link rel="stylesheet" href="../../../css/admin.css">
+
+    <!--Dependencias locales-->
+    <link rel="stylesheet" href="../../../css/admin-style.css">
+    <link rel="stylesheet" href="../../../css/promociones.css">
+
+
+    <title>Pizza y Corre | Admin-Promociones</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class=" border-right slice-two" id="sidebar-wrapper">
+            <div class="sidebar-heading">PIZZA Y CORRE </div>
+            <div class="list-group list-group-flush">
+                <a href="../ordenes/ordenes.html" class="list-group-item drak list-group-item-action slice">
+                    <i class="fas fa-home"></i>
+                    Órdenes
+                </a>
+                <a href="../menu/menu.html" class="list-group-item list-group-item-action slice">
+                    <img src="../../../img/Unión 12.png" alt="" class="png">
+                    Menú
+                </a>
+                <a href="../promociones/promociones.html" class="list-group-item list-group-item-action slice">
+                    <img src="../../../img/Trazado 358.png" alt="" class="png">
+                    Promociones
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-md navbar-light bg-light" id="barra-top">
+                <div class="collapse navbar-collapse navbar-expand-lg" id="navbarSupportedContent">
+                </div>
+                <section class="gnav-section navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fa fa-user-alt nav-icon"></i> Hola Juan Rolo
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+            <!-- contenido de la página -->
+            <div class="container">
+
+                <!-- bradcrumb -->
+                <div class="container bread">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../ordenes/ordenes.html">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Promociones</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>PROMOCIONES</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="sr-only" for="inlineFormInputGroupUsername2"></label>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+                                    placeholder="Buscar Por Nombre">
+                            </div>
+                        </div>
+                        <div class=" col-sm-12 col-md-6">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="../../../img/Combo6.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">2 Pizzas de Peperoni</span>
+                                        <br>
+                                        <span>2 Pizzas grandes Peperoni+Pepsi 2lt</span>
+                                        <br>
+                                        <span>Queso, peperoni, especias</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12 col-md-6">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="../../../img/Comboespecialvariado.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">Combo Especial 2 Pizzas</span>
+                                        <br>
+                                        <span>2 Pizzas grandes</span>
+                                        <br>
+                                        <span>Queso, peperoni, vegetales, hongos, jamón</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-sm-12 col-md-6">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="../../../img/Combotripleespecial.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">Combo Triple</span>
+                                        <br>
+                                        <span>3 Pizzas grandes</span>
+                                        <br>
+                                        <span>Queso, peperoni, vegetales, jamón</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 ">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="../../../img/Combo Bonapetit.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">Combo Bonapetit!</span>
+                                        <br>
+                                        <span>1 Pizza Mega Tamaño</span>
+                                        <br>
+                                        <span>Queso, peperoni, vegetales, jamón</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 ">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="../../../img/muestra para menu.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">Pizza Peperoni</span>
+                                        <br>
+                                        <span>Pizza grande+Pepsi 2lt</span>
+                                        <br>
+                                        <span>Queso, peperoni</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 ">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="../../../img/muestra para menu.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">Pizza de Jamón</span>
+                                        <br>
+                                        <span>Pizzas grande+Coca-Cola 2lt</span>
+                                        <br>
+                                        <span>Queso, jamón</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 ">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-2 col-md-2">
+                                        <img src="../../../img/muestra para menu.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">Pizza de Hongo y Peperoni</span>
+                                        <br>
+                                        <span>Pizza grande+Té Lipton 2.5Lt</span>
+                                        <br>
+                                        <span>Queso, peperoni, hongos</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 ">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class=" col-sm-2 col-md-2">
+                                        <img src="../../../img/muestra para menu.png" class="img-fluid my-img"
+                                            alt="Responsive image">
+                                    </div>
+                                    <div class="top col-sm-6 col-md-6">
+                                        <span class="Title">Pizza Vegetariana</span>
+                                        <br>
+                                        <span>Pizza mediana+Té Lipton 2.5Lt</span>
+                                        <br>
+                                        <span>Queso, vegetales</span>
+                                    </div>
+                                    <div class="top end-btn d-flex justify-content-end col-sm-4 class-md-4">
+                                        <a href="editar-promocion.html">
+                                            <p class="ajust"><i class="fa fa-pen"></i></p>
+                                        </a>
+                                        <a href="#">
+                                            <p class="ajust"><i class="fa fa-times"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    </div>
+    <div class="boton-floating">
+        <a href="Crear_Promoción.html" class="float">
+            <i class="fa fa-plus my-float"></i>
+        </a>
+    </div>
+    <!-- div wrapper -->
+
+    <!--Scripts-->
+    <script src="../../../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+        document.querySelectorAll(".product-delete-btn").forEach(evt => {
+            console.log("on foreach")
+            const button = evt.target;
+            evt.onclick = e => {
+                const article = e.target.parentElement.parentElement.parentElement;
+                console.log(article);
+                Swal.fire({
+                    title: '¿Está seguro que desea elminar esta dirección?',
+                    text: "Esto no se puede revertir",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Si, borrar',
+                    cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                    if (result.value) {
+                        article.style.animationPlayState = 'running';
+                        article.addEventListener("animationend", ()=>{
+                            article.remove();
+                        })
+                    }
+                })
+            }
+        })
+    </script>
+</body>
+
+</html>

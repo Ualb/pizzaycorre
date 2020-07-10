@@ -1,0 +1,81 @@
+/*body*/
+
+.search-bar {
+    justify-content: left !important;
+    background-position: left !important;
+    background-color: white !important;
+
+    width: 50%;
+
+    .size {
+        width: 300px !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+    }
+}
+
+.breadcrumb { 
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    margin-top: 15px;
+    background-color: white;
+    .breadcrumb-item { 
+        color: black;
+    }
+    
+}
+.breadcrumb-item + .breadcrumb-item::before { 
+    content: ">";
+}
+
+.busqueda {
+    width: 40% !important;
+}
+ 
+section {
+    padding: 25px 4.5%;
+    .form-group {
+        font-weight: 400;
+        color: black;
+        text-align: justify !important;
+    }
+    .form-control {
+        width: 50%;
+        color: black !important;
+        font-weight: 400 !important;
+        &::placeholder {
+            color: black !important;
+            font-weight: 400;
+        }
+    }
+
+    .spacing {
+        padding-top: 1rem;
+        .custom-select {
+            color: black;
+            width: 50%;
+        }
+    }
+
+    .input-group {
+        width: 50%;
+    }
+
+    .custom-file-label {
+        font-weight: 400;
+        color: black !important;
+    }
+
+    .agregar {
+        margin-left: 10%;
+
+        .btn {
+            justify-self: center;
+            width: 30%;
+            background-color: black !important;
+            color: white;
+            font-weight: 600 !important;
+        }
+    }
+} 

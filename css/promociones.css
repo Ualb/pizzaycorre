@@ -1,0 +1,103 @@
+/*body*/
+.search-bar {
+  justify-content: left !important;
+  background-position: left !important;
+  background-color: white !important;
+  width: 50%;
+}
+.search-bar .size {
+  width: 300px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.breadcrumb {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  margin-top: 15px;
+  background-color: white;
+}
+.breadcrumb .breadcrumb-item {
+  color: black;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding: 0 8px 0 5px;
+}
+
+.busqueda {
+  width: 40% !important;
+}
+
+section {
+  padding: 25px 4.5%;
+}
+section .form-group {
+  font-weight: 400;
+  color: black;
+  text-align: justify !important;
+}
+section .form-control {
+  width: 50%;
+  color: black !important;
+  font-weight: 400 !important;
+}
+section .form-control::placeholder {
+  color: black !important;
+  font-weight: 400;
+}
+section .spacing {
+  padding-top: 1rem;
+}
+section .spacing .custom-select {
+  color: black;
+  width: 50%;
+}
+section .input-group {
+  width: 50%;
+}
+section .custom-file-label {
+  font-weight: 400;
+  color: black !important;
+}
+section .agregar {
+  margin-left: 10%;
+}
+section .agregar .btn {
+  justify-self: center;
+  width: 30%;
+  background-color: black !important;
+  color: white;
+  font-weight: 600 !important;
+}
+
+.top {
+  margin-top: 8px;
+}
+
+.ajust {
+  margin-left: 10px;
+}
+
+.float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f9b826;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  margin-bottom: 16vh;
+  margin-right: 10px;
+}
+
+.my-float {
+  margin-top: 12px;
+}
+
+/*# sourceMappingURL=promociones.css.map */

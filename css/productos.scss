@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/*Variables*/
+$pizza-red: #a80e0e;
+$mustard: #ffaa00;
+$lg-mustard: #f9b826;
+$black: #281923;
+$lg-black: #343232;
+$enf-gray: #707070;
+$gray: grayscale(
+    $color: #eceaea,
+);
+/*Componentes*/
+/*ADMIN*/
+
+/*body*/
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: $gray;
+}
+
+/*Productos*/
+/*1. Principal*/
+.master {
+    background: rgb(240, 240, 247);
+}
+
+.breadcrumb {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-transform: none !important; 
+    background-color: white;
+    margin-top: 15px;
+    .breadcrumb-item {
+        a {
+            color: $black;
+        }
+        color: $black !important;
+    }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+.my-img {
+    width: 100px;
+    margin-top: 18px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.card {
+    margin: 10px auto;
+    background: white;
+    height: 100px;
+}
+
+p {
+    margin-top: 5px;
+    font-weight: 550;
+}
+
+span {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+p + span {
+    font-weight: 550;
+}
+
+.Title {
+    font-weight: 600;
+    font-style: $black;
+    font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+    .sidebar-sticky {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+}
+
+.content {
+    margin-top: 6px;
+}
+
+.end-content {
+    display: flex; 
+    font-size: 14px;
+}
+ .ajustar {
+    margin-top: 6px;
+    margin-left: 15px;
+ }
+
+.float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:20px;
+	right:20px;
+	background-color:#f9b826;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    margin-bottom: 16vh;
+    margin-right: 10px;
+}
+
+.my-float{
+	margin-top:12px;
+}
