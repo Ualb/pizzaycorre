@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Dependencias generales vendor-->
+    <link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
+    <script src="../../../vendor/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../../vendor/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../vendor/css/fontawesome-all.min.css">
+    <script src="../../../vendor/js/fontawesome-all.min.js"></script>
+
+    <!--Dependencias generales-->
+    <link rel="stylesheet" href="../../../css/general.css">
+    <link rel="stylesheet" href="../../../css/admin.css">
+
+    <!--Dependencias locales-->
+    <link rel="stylesheet" href="../../../css/admin-style.css">
+    <link rel="stylesheet" href="../../../css/orden-proceso-admin.css">
+
+    <title>Pizza y Corre | Admin</title>
+</head>
+
+<body class="master">
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="  border-right slice-two" id="sidebar-wrapper">
+            <div class="sidebar-heading">PIZZA Y CORRE </div>
+            <div class="list-group list-group-flush">
+                <a href="ordenes.html" class="list-group-item drak list-group-item-action slice">
+                    <i class="fas fa-home"></i>
+                    Órdenes
+                </a>
+                <a href="#" class="list-group-item list-group-item-action slice">
+                    <img src="../../../img/Unión 12.png" alt="" class="png">
+                    Menú
+                </a>
+                <a href="#" class="list-group-item list-group-item-action slice">
+                    <img src="../../../img/Trazado 358.png" alt="" class="png">
+                    Promociones
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-md navbar-light bg-light" id="barra-top">
+                <div class="collapse navbar-collapse navbar-expand-lg" id="navbarSupportedContent">
+                </div>
+                <section class="gnav-section navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                <i class="fa fa-user-alt nav-icon"></i> Hola Juan Rolo
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+
+            <!-- contenido de la página -->
+            <div class="container">
+                <!-- bradcrumb -->
+                <div class="container bread">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Órdenes en Proceso</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>DETALLE DE ORDEN</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="sr-only" for="inlineFormInputGroupUsername2"></label>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                </div>
+                                <input type="text" class="my-input form-control" id="inlineFormInputGroupUsername2"
+                                    placeholder="Buscar Por Nombre">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container my-card">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="card container">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-2">
+                                        <img src="../../../img/avatar.jpg" alt="" class=" my-img rounded-circle">
+                                    </div>
+                                    <div class="content col-sm-5 col-md-5">
+                                        <h2>Juan Rolo</h2>
+                                        <span>ID de Orden 76385865943213</span>
+                                        <p id="search"><strong>Enviar a esta dirección</strong></p>
+                                        <p class="dir">Residencial Valle de Sandino Casa #F04</p>
+                                        <p class="dir">Cuidad Sandino</p>
+                                        <p class="dir">Managua, Nicaragua</p>
+                                        <p>Productos</p>
+                                        <p>1 Pizza Pepperoni Grande</p>
+                                        <p>1 Calzone de Jamon</p>
+                                        <p>1 Pepsi 2.5L</p>
+                                    </div>
+                                    <div class="content col-sm-4 col-md-4">
+                                        <div class="ultimo">
+                                            <p>18:55 PM</p>
+                                            <button type="button" id="change-state" class="btn btn-warning">Marcar como EN
+                                                PROCESO</button>
+                                            <p id="price">$10.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="end-line">
+                                            <p>Ordenado el <strong>Jue, 14 de Junio 20</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- div wrapper -->
+
+            <!--Scripts-->
+            <script src="../../../js/orden-admin.js"></script>
+</body>
+
+</html>
