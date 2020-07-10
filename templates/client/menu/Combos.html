@@ -2,409 +2,429 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Dependencias generales vendor-->
-    <link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
-    <script src="../../../vendor/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../../../vendor/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../../../vendor/css/fontawesome-all.min.css">
-    <script src="../../../vendor/js/fontawesome-all.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Dependencias generales vendor-->
+  <link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
+  <script src="../../../vendor/js/jquery-3.5.1.slim.min.js"></script>
+  <script src="../../../vendor/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../../../vendor/css/fontawesome-all.min.css">
+  <script src="../../../vendor/js/fontawesome-all.min.js"></script>
 
-    <!--Dependencias generales-->
-    <link rel="stylesheet" href="../../../css/general.css">
-
-
-    <!--Dependencias locales-->
-    <link rel="stylesheet" href="../../../css/menu.css">
+  <!--Dependencias generales-->
+  <link rel="stylesheet" href="../../../css/general.css">
 
 
-    <title>Pizza y Corre | Menú-Combo</title>
+  <!--Dependencias locales-->
+  <link rel="stylesheet" href="../../../css/menu.css">
+
+
+  <title>Pizza y Corre | Menú-Combo</title>
 </head>
 
 <body>
 
-    <header id="layout-header" class="navbar navbar-expand-md navbar-dark bg-dark">
+  <header id="layout-header" class="navbar navbar-expand-md navbar-dark bg-dark">
 
-        <a href="#" class="navbar-brand"><img src="../../../img/main-logo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <section class="gnav-section navbar-nav"></section>
-            <section class="gnav-section navbar-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Menú</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contactenos</a></li>
-                </ul>
-            </section>
-            <section class="gnav-section navbar-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user-alt nav-icon"></i><span
-                                class="md-only">Inicio de Sesión</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-bag nav-icon"></i><span
-                                class="md-only">Carrito de compras</span></a></li>
-                </ul>
-            </section>
+    <!--<a href="#" class="navbar-brand"><img src="../../img/main-logo.svg" alt=""></a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <section class="gnav-section navbar-nav"></section>
+      <section class="gnav-section navbar-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="../landing.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../menu/menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="../other/contact.html">Contactenos</a></li>
+        </ul>
+      </section>
+      <section class="gnav-section navbar-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" id="login-btn" href="#"><i class="fa fa-user-alt nav-icon"></i><span
+                class="md-only">Inicio de Sesión</span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="../order/car.html"><i
+                class="fa fa-shopping-bag nav-icon"></i><span class="md-only">Carrito de
+                compras</span></a></li>
+        </ul>
+      </section>
+    </div>
+  </header>
+
+  <!--Principal-->
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light search-bar">
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 size" type="text" placeholder="Buscar">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search nav-icon"></i></button>
+      </form>
+
+    </nav>
+    <ol class="breadcrumb">
+
+      <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+      <li class="breadcrumb-item"><a href="#">Menú</a></li>
+      <li class="breadcrumb-item active">Combo</li>
+    </ol>
+
+
+    <section class="row" id="contenido">
+      <article class="col-md-4 col-lg-4 ">
+        <div class="card content-card" style="width: 18rem;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"></li>
+            <li class="list-group-item">
+              <h4>Filtrar</h4>
+            <li class="list-group-item">
+              <h5><strong>CATEGORÍAS</strong></h5>
+              <ul style="list-style: none;">
+                <li><a href="menu.html">Pizzas</a></li>
+                <li><a href="calzone.html">Calzones</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="combos.html">Combos</a></li>
+              </ul>
+
+            </li>
+
+            </li>
+            <li class="list-group-item">
+              <h5>PRECIO</h5>
+              <b>$0 $30</b>
+              <input type="range" class="custom-range valor" id="customRange1" min="1" max="50" value="1">
+
+
+            </li>
+            <li class="list-group-item">
+              <h5>TIPOS</h5>
+              <div class="form-check fuente">
+                <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">Mixto</label>
+              </div>
+
+              <div class="form-check fuente">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">Grandes</label>
+              </div>
+
+              <div class="form-check fuente">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">Familiar</label>
+              </div>
+
+              <div class="form-check fuente">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck4">Combazos</label>
+              </div>
+
+
+
+            </li>
+
+          </ul>
         </div>
-    </header>
+      </article>
+      <article class="col-md-9 col-lg-8">
+        <img src="../../../img/Promoción para menu.png" class="img-fluid" alt="Responsive image">
+        <hr>
+        <div>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <h5><strong>Pizzas</strong></h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+              aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <!--Principal-->
-    <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light search-bar">
-            
+
+            <div class="collapse navbar-collapse botones" id="navbarColor03">
+
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 size" type="text" placeholder="Buscar">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search nav-icon"></i></button>
-              </form>
-            
-        </nav>
-        <ol class="breadcrumb" >
-            
-          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="#">Menú</a></li>
-          <li class="breadcrumb-item active">Combo</li>
-        </ol>
-          
 
-        <section class="row" id="contenido">
-            <article class="col-md-4 col-lg-4 ">
-                <div class="card content-card" style="width: 18rem;">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"></li>
-                      <li class="list-group-item"><h4>Filtrar</h4>
-                        <li class="list-group-item">
-                            <h5><strong>CATEGORÍAS</strong></h5>
-                              <h6>Pizzas (0)</h6>
-                              <h6>Calzones (0)</h6>
-                              <h6>Bebidas (0)</h6>
-                            
-                        </li>
-                    
-                    </li>
-                      <li class="list-group-item"><h5>PRECIO</h5>
-                        <b>$0 $30</b>
-                        <input type="range" class="custom-range valor" id="customRange1" min="1" max="50" value="1" >
-                        
-                        
-                    </li>
-                      <li class="list-group-item">
-                          <h5>TIPOS</h5>
-                          <div class="form-check fuente">
-                            <input class="form-check-input " type="checkbox" value="" id="defaultCheck1">
-                            <label class="form-check-label" for="defaultCheck1">Mixto</label>
-                        </div>
 
-                        <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                            <label class="form-check-label" for="defaultCheck2">Grandes</label>
-                        </div>
 
-                        <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                            <label class="form-check-label" for="defaultCheck3">Familiar</label>
-                        </div>
+                <div class="btn-group est">
+                  <button class="disabled btn btn-secondary btn-sm estilo" type="button">
+                    Ordenar por |
+                  </button>
+                  <button type="button" class=" btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr">
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item estilo" href="#">Popularidad</a>
+                        <a class="dropdown-item estilo" href="#">Categorías</a>
+                        <a class="dropdown-item estilo" href="#">Bajo Precio</a>
+                        <a class="dropdown-item estilo" href="#">Alto Precio</a>
+                      </div>
+                    </span>
+                </div>
 
-                        <div class="form-check fuente">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                            <label class="form-check-label" for="defaultCheck4">Combazos</label>
-                        </div>
 
-                        
-                    
-                    </li>
-                    
-                    </ul>
-                  </div>
-            </article>
-            <article class="col-md-9 col-lg-8">
-                <img src="../../../img/Promoción para menu.png" class="img-fluid" alt="Responsive image">
-                <hr>
-                <div>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#"><h5><strong>Pizzas</strong></h5></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                    
-            
-                        <div class="collapse navbar-collapse botones" id="navbarColor03">
-                          
-                          <form class="form-inline my-2 my-lg-0">
-                            
-            
-                                
-                                <div class="btn-group est" >
-                                    <button class="disabled btn btn-secondary btn-sm estilo"  type="button">
-                                      Ordenar por |
-                                    </button>
-                                    <button type="button" class=" btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <span class="sr">
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item estilo" href="#">Popularidad</a>
-                                            <a class="dropdown-item estilo" href="#">Categorías</a>
-                                            <a class="dropdown-item estilo" href="#">Bajo Precio</a>
-                                            <a class="dropdown-item estilo" href="#">Alto Precio</a>  
-                                        </div>
-                                    </span>
-                                </div>
-            
-            
-                                <div class="btn-group est" >
-                                    <button class="disabled btn btn-secondary btn-sm estilo"  type="button">
-                                      Vista por |
-                                    </button>
-                                    <button type="button" class=" btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <span class="sr">
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item estilo" href="#"><i class="fa fa-th nav-icon"></i>Cuadrícula</a>
-                                            <a class="dropdown-item estilo" href="#"><i class="fa fa-list nav-icon"></i> Lista</a>
-                                        </div>
-                                    </span>
-                                </div>
-            
-            
-            
-                                <div class="btn-group est">
-                                    <button class=" disabled btn btn-secondary btn-sm estilo "  type="button">
-                                      Ver |
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <span class="sr">Por página
-                                        <div class="dropdown-menu custom-s">
-                                            <a class="dropdown-item estilo" data-target="1" href="#">12 Por página</a>
-                                            <a class="dropdown-item estilo" href="#">6 Por página</a>
-                                            <a class="dropdown-item estilo" href="#">4 Por página</a>
-                                          </div>
-                
-                                      </span>
-                                    </button>
-                                </div>
-            
-            
-                          </form>
-                        </div>
-                      </nav>
-                        
+                <div class="btn-group est">
+                  <button class="disabled btn btn-secondary btn-sm estilo" type="button">
+                    Vista por |
+                  </button>
+                  <button type="button" class=" btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr">
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item estilo" href="#"><i class="fa fa-th nav-icon"></i>Cuadrícula</a>
+                        <a class="dropdown-item estilo" href="#"><i class="fa fa-list nav-icon"></i> Lista</a>
+                      </div>
+                    </span>
+                </div>
+
+
+
+                <div class="btn-group est">
+                  <button class=" disabled btn btn-secondary btn-sm estilo " type="button">
+                    Ver |
+                  </button>
+                  <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split estilo"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr">Por página
+                      <div class="dropdown-menu custom-s">
+                        <a class="dropdown-item estilo" data-target="1" href="#">12 Por página</a>
+                        <a class="dropdown-item estilo" href="#">6 Por página</a>
+                        <a class="dropdown-item estilo" href="#">4 Por página</a>
                       </div>
 
-                <section class="row" id="Menu">
-                    <article class="col-md-6">
-                        <div class="cards">
-                            <img src="../../../img/Combo6.png" class="img-fluid" alt="Responsive image" style="width: 90%;">
-                            <hr>
-                          <h5>Dos pizzas (Peperoni) y Pepsi 2lt</h5>
-                          <h6>$6.59
-                            <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Ver
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a href="#">Detalle</a><br>
-                                <a href="#">Añadir a carrito</a>
-                               
-                                 
-                                </div>
-                              </div></h6>
-                        </div>
-                    </article>
-                    <article class="col-md-6">
-                        <div class="cards">
-                            <img src="../../../img/Comboespecialvariado.png" class="img-fluid" alt="Responsive image">
-                            <hr>
-                          <h5>Combo Especial 2 Pizzas</h5>
-                          <h6>$8
-                            <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Ver
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a href="#">Detalle</a><br>
-                                <a href="#">Añadir a carrito</a>
-                                </div>
-                              </div>
-                          </h6>
-                        </div>
-                    </article>
-                    <article class="col-md-6">
-                        <div class="cards">
-                            <img src="../../../img/Combotripleespecial.png" class="img-fluid" alt="Responsive image" style="width: 100%;">
-                            <hr>
-                          <h5>Combo Triple</h5>
-                          <h6>$10.65
-                            <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Ver
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a href="#">Detalle</a><br>
-                                <a href="#">Añadir a carrito</a>
-                                </div>
-                              </div>
-                          </h6>
-                        </div>
-                    </article>
-                    <article class="col-md-6">
-                        <div class="cards">
-                            <img src="../../../img/Combo Bonapetit.png" class="img-fluid" alt="Responsive image" style="width: 80%;">
-                            <hr>
-                          <h5>Combo Bon appetit!</h5>
-                          <h6>$22.97
-                            <div class="btn-group">
-                                <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Ver
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a href="#">Detalle</a><br>
-                                <a href="#">Añadir a carrito</a>
-                                </div>
-                              </div>
-                          </h6>
-                         
-                        </div>
-                        <div class="Align">
-                            <ul class="pagination">
-                              <li class="page-item">
-                                <a class="page-link" href="#">&LeftAngleBracket;</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">1</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">2</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">3</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">4</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">5</a>
-                              </li>
-                              <li class="page-item">
-                                <a class="page-link" href="#">&RightAngleBracket;</a>
-                              </li>
-                            </ul>
-                          </div>
-                    </article>
-                    
-                </section>
-                
-            </article>
+                    </span>
+                  </button>
+                </div>
 
-            
+
+              </form>
+            </div>
+          </nav>
+
+        </div>
+
+        <section class="row" id="Menu">
+          <article class="col-md-6">
+            <div class="cards">
+              <img src="../../../img/Combo6.png" class="img-fluid" alt="Responsive image" style="width: 90%;">
+              <hr>
+              <h5>Dos pizzas (Peperoni) y Pepsi 2lt</h5>
+              <h6>$6.59
+                <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ver
+                  </button>
+                  <div class="dropdown-menu">
+                    <a href="#">Detalle</a><br>
+                    <a href="#">Añadir a carrito</a>
+
+
+                  </div>
+                </div>
+              </h6>
+            </div>
+          </article>
+          <article class="col-md-6">
+            <div class="cards">
+              <img src="../../../img/Comboespecialvariado.png" class="img-fluid" alt="Responsive image">
+              <hr>
+              <h5>Combo Especial 2 Pizzas</h5>
+              <h6>$8
+                <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ver
+                  </button>
+                  <div class="dropdown-menu">
+                    <a href="#">Detalle</a><br>
+                    <a href="#">Añadir a carrito</a>
+                  </div>
+                </div>
+              </h6>
+            </div>
+          </article>
+          <article class="col-md-6">
+            <div class="cards">
+              <img src="../../../img/Combotripleespecial.png" class="img-fluid" alt="Responsive image"
+                style="width: 100%;">
+              <hr>
+              <h5>Combo Triple</h5>
+              <h6>$10.65
+                <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ver
+                  </button>
+                  <div class="dropdown-menu">
+                    <a href="#">Detalle</a><br>
+                    <a href="#">Añadir a carrito</a>
+                  </div>
+                </div>
+              </h6>
+            </div>
+          </article>
+          <article class="col-md-6">
+            <div class="cards">
+              <img src="../../../img/Combo Bonapetit.png" class="img-fluid" alt="Responsive image" style="width: 80%;">
+              <hr>
+              <h5>Combo Bon appetit!</h5>
+              <h6>$22.97
+                <div class="btn-group">
+                  <button class="btn btn-secondary btn-sm dropdown-toggle" id="styleBtn" type="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ver
+                  </button>
+                  <div class="dropdown-menu">
+                    <a href="#">Detalle</a><br>
+                    <a href="#">Añadir a carrito</a>
+                  </div>
+                </div>
+              </h6>
+
+            </div>
+            <div class="Align">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">&LeftAngleBracket;</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">&RightAngleBracket;</a>
+                </li>
+              </ul>
+            </div>
+          </article>
 
         </section>
 
+      </article>
 
 
-    </main>
 
-    <!--Footer-->
-    <footer id="layout-footer">
-        <section class="row" id="info-caract">
-            <article class="col-md-6 col-lg-3">
-                <div class="footer-card">
-                    <img src="../../../img/delivery.svg" alt="">
-                    <h4>Envío Gratis en tu Primera Orden</h4>
-                    <hr>
-                    <p>Regístrese para obtener actualizaciones y tu primer envío es gratis.</p>
-                </div>
-            </article>
-            <article class="col-md-6 col-lg-3">
-                <div class="footer-card">
-                    <img src="../../../img/tiempo.svg" alt="">
-                    <h4>Envío en 30 minutos</h4>
-                    <hr>
-                    <p>Todo lo que pidas será entregado rápidamente hasta tu puerta.</p>
-                </div>
-            </article>
-            <article class="col-md-6 col-lg-3">
-                <div class="footer-card">
-                    <img src="../../../img/pizza.svg" alt="">
-                    <h4>Garantizamos la calidad</h4>
-                    <hr>
-                    <p>Utilizamos los mejores ingredientes para cocinar la mejor comida para usted.</p>
-                </div>
-            </article>
-            <article class="col-md-6 col-lg-3">
-                <div class="footer-card">
-                    <img src="../../../img/variedad.svg" alt="">
-                    <h4>Variedad de platillos</h4>
-                    <hr>
-                    <p>En nuestro menú encontrará una gran variedad de platos y bebidas.</p>
-                </div>
-            </article>
-        </section>
-        <section class="row" id="info-contacto">
-            <article class="col-md-6">
-                <div class="footer-card">
-                    <b>Llámanos</b>
-                    <h4>2231-0634</h4>
-                    <div class="contact-info">
-                        <p class="icon"><i class="far fa-clock"></i></p>
-                        <div class="info">
-                            <p>Lun - Vie: 11:00-23:00</p>
-                            <p>Sab: 12:00-23:00 | Dom: 12:00-21:00</p>
-                        </div>
-                    </div>
-                    <div class="contact-info">
-                        <p class="icon"><i class="fas fa-map-marker-alt"></i></p>
-                        <div class="info">
-                            <p>Pizza y Corre</p>
-                            <p>Managua, Nicaragua</p>
-                        </div>
-                    </div>
-                    <div class="social">
-                        <div class="social-icon"><a href="#"><i class="fab fa-facebook"></i></a>
-                        </div>
-                        <div class="social-icon"><a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                        <div class="social-icon"><a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a></div>
-                    </div>
-                </div>
-            </article>
-            <article class="col-md-6">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.6784528713574!2d-86.21470045009632!3d12.065630791412852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73ffd5bbe86377%3A0x4ca0e1875f3b2061!2sPIZZA%20Y%20CORRE%20PICK%20UP%20DELIVERY!5e0!3m2!1ses-419!2sni!4v1591577794965!5m2!1ses-419!2sni"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </article>
-        </section>
-        <section class="row" id="info-footer">
-            <article class="col-md-4 footer-card">
-                <img id="logo" src="../../../img/main-logo.svg" alt="">
-                <p>Somos un emprendimiento 100% nicaragüense enfocado en brindar la mejor pizza artesanal a nuestros
-                    clientes hasta la puerta de su casa con toda comodidad.</p>
-                <img id="cards" src="../../../img/cards.png" alt="">
-            </article>
-            <article class="col-md-4 footer-card">
-                <h5>Enlaces útiles</h5>
-                <hr>
-                <ul>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Menú</a></li>
-                    <li><a href="#">Contactanos</a></li>
-                </ul>
-            </article>
-            <article class="col-md-4 footer-card">
-                <h5>Publicaciones de Instagram</h5>
-                <hr>
-            </article>
-        </section>
-        <section class="row justify-content-center" id="footer-copy">
-            <p>&copy; Pizza y Corre 2020, Todos los derechos reservados. Desarrollado por BreveTech S.A.</p>
-        </section>
-    </footer>
+    </section>
 
-    <!--Scripts-->
-    <script src="../../../js/main.js"></script>
+
+
+  </main>
+
+  <!--Footer-->
+  <footer id="layout-footer">
+    <section class="row" id="info-caract">
+      <article class="col-md-6 col-lg-3">
+        <div class="footer-card">
+          <img src="../../img/delivery.svg" alt="">
+          <h4>Envío Gratis en tu Primera Orden</h4>
+          <hr>
+          <p>Regístrese para obtener actualizaciones y tu primer envío es gratis.</p>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-3">
+        <div class="footer-card">
+          <img src="../../img/tiempo.svg" alt="">
+          <h4>Envío en 30 minutos</h4>
+          <hr>
+          <p>Todo lo que pidas será entregado rápidamente hasta tu puerta.</p>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-3">
+        <div class="footer-card">
+          <img src="../../img/pizza.svg" alt="">
+          <h4>Garantizamos la calidad</h4>
+          <hr>
+          <p>Utilizamos los mejores ingredientes para cocinar la mejor comida para usted.</p>
+        </div>
+      </article>
+      <article class="col-md-6 col-lg-3">
+        <div class="footer-card">
+          <img src="../../img/variedad.svg" alt="">
+          <h4>Variedad de platillos</h4>
+          <hr>
+          <p>En nuestro menú encontrará una gran variedad de platos y bebidas.</p>
+        </div>
+      </article>
+    </section>
+    <section class="row" id="info-contacto">
+      <article class="col-md-6">
+        <div class="footer-card">
+          <b>Llámanos</b>
+          <h4>2231-0634</h4>
+          <div class="contact-info">
+            <p class="icon"><i class="far fa-clock"></i></p>
+            <div class="info">
+              <p>Lun - Vie: 11:00-23:00</p>
+              <p>Sab: 12:00-23:00 | Dom: 12:00-21:00</p>
+            </div>
+          </div>
+          <div class="contact-info">
+            <p class="icon"><i class="fas fa-map-marker-alt"></i></p>
+            <div class="info">
+              <p>Pizza y Corre</p>
+              <p>Managua, Nicaragua</p>
+            </div>
+          </div>
+          <div class="social">
+            <div class="social-icon"><a href="https://es-la.facebook.com/PizzaYCorreNic/"><i
+                  class="fab fa-facebook"></i></a>
+            </div>
+            <div class="social-icon"><a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+            <div class="social-icon"><a href="https://www.instagram.com/pizzaycorrenicaragua/">
+                <i class="fab fa-instagram"></i>
+              </a></div>
+          </div>
+        </div>
+      </article>
+      <article class="col-md-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.6784528713574!2d-86.21470045009632!3d12.065630791412852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f73ffd5bbe86377%3A0x4ca0e1875f3b2061!2sPIZZA%20Y%20CORRE%20PICK%20UP%20DELIVERY!5e0!3m2!1ses-419!2sni!4v1591577794965!5m2!1ses-419!2sni"
+          frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </article>
+    </section>
+    <section class="row" id="info-footer">
+      <article class="col-md-4 footer-card">
+        <img id="logo" src="../../img/main-logo.svg" alt="">
+        <p>Somos un emprendimiento 100% nicaragüense enfocado en brindar la mejor pizza artesanal a nuestros
+          clientes hasta la puerta de su casa con toda comodidad.</p>
+        <img id="cards" src="../../img/cards.png" alt="">
+      </article>
+      <article class="col-md-4 footer-card">
+        <h5>Enlaces útiles</h5>
+        <hr>
+        <ul>
+          <li><a href="../other/about.html">Sobre nosotros</a></li>
+          <li><a href="../menu/menu.html">Menú</a></li>
+          <li><a href="../other/contact.html">Contactanos</a></li>
+        </ul>
+      </article>
+      <article class="col-md-4 footer-card">
+        <h5>Publicaciones de Instagram</h5>
+        <hr>
+      </article>
+    </section>
+    <section class="row justify-content-center" id="footer-copy">
+      <p>&copy; Pizza y Corre 2020, Todos los derechos reservados. Desarrollado por BreveTech S.A.</p>
+    </section>
+  </footer>
+
+  <!--Scripts-->
+  <script src="../../../js/main.js"></script>
 </body>
 
 </html>
