@@ -24,6 +24,7 @@
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
+  padding: 0 8px 0 5px;
 }
 
 .busqueda {
@@ -80,4 +81,23 @@ section .agregar .btn {
   margin-left: 10px;
 }
 
-/*# sourceMappingURL=crear_promocion.css.map */
+.float {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f9b826;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  margin-bottom: 16vh;
+  margin-right: 10px;
+}
+
+.my-float {
+  margin-top: 12px;
+}
+
+/*# sourceMappingURL=promociones.css.map */
