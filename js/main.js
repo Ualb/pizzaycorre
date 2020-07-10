@@ -22,7 +22,7 @@ function closeModal(){
     modal.style.display = 'none';
 }
 
-function validateSubmit() {
+function validateSubmit(url) {
     if (document.querySelector("#user").value == "" || document.querySelector("#pswd").value == "") {
         Swal.fire({
             icon: 'error',
@@ -31,5 +31,6 @@ function validateSubmit() {
         })
         return false;
     }
-    
+    window.location.replace(url);
+    return false;
 }
