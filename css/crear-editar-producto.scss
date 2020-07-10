@@ -1,0 +1,63 @@
+.master {
+    background: rgb(240, 240, 247);
+}
+
+.breadcrumb {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    text-transform: none !important;
+    background-color: white;
+    margin-top: 15px;
+    .breadcrumb-item {
+        a {
+            color: black;
+        }
+        color: black !important;
+    }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.card {
+    margin: 0 10px 10px 10px;
+    background: white;
+
+    h4 {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 550;
+    }
+
+    .drag-img {
+        margin: 10px;
+        background: rgb(240, 240, 247);
+        text-align: center;
+        padding-bottom: 50px;
+
+        img {
+            width: 100px;
+            margin-top: 50px;
+        } 
+
+        strong {
+            color: rgb(93, 133, 192);
+        }
+    }
+}
+ 
+input {
+    margin-bottom: 15px;
+}
+
+.agregar {
+    text-align: right;
+}

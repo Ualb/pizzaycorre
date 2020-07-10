@@ -2,127 +2,131 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Dependencias generales vendor-->
-    <link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
-    <script src="../../../vendor/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="../../../vendor/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../../../vendor/css/fontawesome-all.min.css">
-    <script src="../../../vendor/js/fontawesome-all.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Dependencias generales vendor-->
+	<link rel="stylesheet" href="../../../vendor/css/bootstrap.min.css">
+	<script src="../../../vendor/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="../../../vendor/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../../../vendor/css/fontawesome-all.min.css">
+	<script src="../../../vendor/js/fontawesome-all.min.js"></script>
 
-    <!--Dependencias generales-->
-    <link rel="stylesheet" href="../../../css/general.css">
-    <link rel="stylesheet" href="../../../css/admin.css">
+	<!--Dependencias generales-->
+	<link rel="stylesheet" href="../../../css/general.css">
+	<link rel="stylesheet" href="../../../css/admin.css">
 
-    <!--Dependencias locales-->
-    <link rel="stylesheet" href="../../../css/admin-style.css">
+	<!--Dependencias locales-->
+	<link rel="stylesheet" href="../../../css/admin-style.css">
+	<link rel="stylesheet" href="../../../css/crear-editar-producto.css">
 
-
-    <title>Pizza y Corre | Admin-CrearProductos</title>
+	<title>Pizza y Corre | Admin-CrearProductos</title>
 </head>
 
-<body>
-    <div class="d-flex" id="wrapper">
+<body class="master">
+	<div class="d-flex" id="wrapper">
 
-        <!-- Sidebar -->
-        <div class="  border-right slice-two" id="sidebar-wrapper">
-            <div class="sidebar-heading">PIZZA Y CORRE </div>
-            <div class="list-group list-group-flush">
-                <a href="#" class="list-group-item drak list-group-item-action slice">
-                    <i class="fas fa-home"></i>
-                    Órdenes
-                </a>
-                <a href="#" class="list-group-item list-group-item-action slice">
-                    <img src="../../../img/Unión 12.png" alt="" class="png"> 
-                    Menú
-                </a>
-                <a href="#" class="list-group-item list-group-item-action slice">
-                    <img src="../../../img/Trazado 358.png" alt="" class="png"> 
-                    Promociones
-                </a>
-            </div>
-        </div>
-        <!-- /#sidebar-wrapper -->
+		<!-- Sidebar -->
+		<div class="  border-right slice-two" id="sidebar-wrapper">
+			<div class="sidebar-heading">PIZZA Y CORRE </div>
+			<div class="list-group list-group-flush">
+				<a href="../ordenes/ordenes.html" class="list-group-item drak list-group-item-action slice">
+					<i class="fas fa-home"></i>
+					Órdenes
+				</a>
+				<a href="../menu/Productos.html" class="list-group-item list-group-item-action slice">
+					<img src="../../../img/Unión 12.png" alt="" class="png">
+					Menú
+				</a>
+				<a href="../promociones/promociones.html" class="list-group-item list-group-item-action slice">
+					<img src="../../../img/Trazado 358.png" alt="" class="png">
+					Promociones
+				</a>
+			</div>
+		</div>
+		<!-- /#sidebar-wrapper -->
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <nav class="navbar navbar-expand-md navbar-light bg-light" id="barra-top">
-                <div class="collapse navbar-collapse navbar-expand-lg" id="navbarSupportedContent">
-                </div> 
-                <section class="gnav-section navbar-nav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">
-                                <i class="fa fa-user-alt nav-icon"></i> Hola Juan Rolo 
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </nav>
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-md navbar-light bg-light" id="barra-top">
+				<div class="collapse navbar-collapse navbar-expand-lg" id="navbarSupportedContent">
+				</div>
+				<section class="gnav-section navbar-nav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link text-white" href="#">
+								<i class="fa fa-user-alt nav-icon"></i> Hola Juan Rolo
+							</a>
+						</li>
+					</ul>
+				</section>
+			</nav>
 
-            <!-- contenido de la página -->
-            <div class="container" id="Menu">
-                <ol class="breadcrumb" >
-            
-                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                    <li class="breadcrumb-item"><a href="#">Menú</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Crear Productos</li>
-                  </ol>
+			<!-- contenido de la página -->
+			<div class="container" id="Menu">
+				<ol class="breadcrumb">
 
-                  <h1>Información del Producto</h1>
-                  <section>
-                      <form>
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Nombreprodhelp" placeholder="Nombre del producto*">
-                      <div class="form-group spacing">
-                        <select class="custom-select">
-                          <option selected="">Categorías</option>
-                          <option value="1">Pizza</option>
-                          <option value="2">Bebidas</option>
-                          <option value="3">Calzone</option>
-                          <option value="4">Combo</option>
-                        </select>
-                      </div>
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Nombreprodhelp" placeholder="Precio del Producto">
-                      
-                      <div class="form-group spacing">
-                        
-                        <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Descripción*"></textarea>
-                      </div>
-                        </div>
-                        
-                       
-                    </form>
-            
-                    <div class="form-group">
-                        <div class="input-group mb-3">
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile02">
-                            <label class="custom-file-label" for="inputGroupFile02">Elegir Imagen</label>
-                          </div>
-                          <div class="input-group-append">
-                            <span class="input-group-text" id="">Subir Imagen</span>
-                          </div>
-                        </div>
-                      </div>
+					<li class="breadcrumb-item"><a href="../ordenes/ordenes.html">Inicio</a></li>
+					<li class="breadcrumb-item"><a href="../menu/Productos.html">Menú</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Crear Producto</li>
+				</ol>
+				
+				<div class="container">
+					<h2>Información del Producto</h2>
+					<div class="row">
+						<div class="col-sm-6">
+							<section>
+								<form>
+									<div class="form-group">
+										<input type="text" class="form-control stablish-width " id="exampleInputEmail1"
+											aria-describedby="Nombreprodhelp" placeholder="Nombre del producto*">
+										<div class="form-group spacing stablish-width ">
+											<select class="custom-select">
+												<option selected="">Categorías</option>
+												<option value="1">Pizza</option>
+												<option value="2">Bebidas</option>
+												<option value="3">Calzone</option>
+												<option value="4">Combo</option>
+											</select>
+										</div>
+										<input type="text" class="stablish-width form-control" id="exampleInputEmail1"
+											aria-describedby="Nombreprodhelp" placeholder="Precio del Producto">
+										<div class="form-group spacing stablish-width ">
+											<textarea class="form-control" id="exampleTextarea" rows="3"
+												placeholder="Descripción*"></textarea>
+										</div>
+									</div>
+								</form>
+								<div class="agregar ">
+									<button type="submit" class="btn btn-dark">AGREGAR PRODUCTO</button>
+								</div>
 
-                      <div class="agregar">
-                        <button type="submit" class="btn btn-dark">AGREGAR PRODUCTO</button>
-                        
-                    </div>
-                </section>
+							</section>
+						</div>
+						<div class="col-sm-6">
+							<div class="card">
+								<h4>Fotografía del Producto</h4>
+								<div class="drag-img">
+									<img src="../../../img/Trazado 344@2x.png" alt="">
+									<br>
+									<span>ARRASTRA Y SUELTA</span>
+									<br>
+									<span class="end-text">La fotografía aquí o <strong>busquela</strong></span>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+				</div>
 
-    </div>
-    <!-- div wrapper -->
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
 
-    <!--Scripts-->
-    <script src="../../../js/main.js"></script>
+	</div>
+	<!-- div wrapper -->
+
+	<!--Scripts-->
+	<script src="../../../js/main.js"></script>
 </body>
 
 </html>

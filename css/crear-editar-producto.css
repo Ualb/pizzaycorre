@@ -1,0 +1,61 @@
+.master {
+  background: #f0f0f7;
+}
+
+.breadcrumb {
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  text-transform: none !important;
+  background-color: white;
+  margin-top: 15px;
+}
+.breadcrumb .breadcrumb-item {
+  color: black !important;
+}
+.breadcrumb .breadcrumb-item a {
+  color: black;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.card {
+  margin: 0 10px 10px 10px;
+  background: white;
+}
+.card h4 {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 550;
+}
+.card .drag-img {
+  margin: 10px;
+  background: #f0f0f7;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.card .drag-img img {
+  width: 100px;
+  margin-top: 50px;
+}
+.card .drag-img strong {
+  color: #5d85c0;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+.agregar {
+  text-align: right;
+}
+
+/*# sourceMappingURL=crear-editar-producto.css.map */
