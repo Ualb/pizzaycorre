@@ -22,15 +22,15 @@ function closeModal(){
     modal.style.display = 'none';
 }
 
-function validateSubmit(url) {
+function validateSubmit(evt) {
     if (document.querySelector("#user").value == "" || document.querySelector("#pswd").value == "") {
         Swal.fire({
             icon: 'error',
             title: 'Error',
             text: 'Rellene todos los campos',
         })
+        evt.preventDefault();
         return false;
     }
-    window.location.replace(url);
     return false;
 }
