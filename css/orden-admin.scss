@@ -1,0 +1,44 @@
+.master {
+    background: rgb(240, 240, 247);
+}
+
+.bread {
+    margin-top: 10px; 
+}
+
+.breadcrumb {
+    background: white;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+  }   
+
+.my-img {
+    width: 50px; 
+    margin-top: 18px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.card { 
+    margin: 10px auto;
+    background: white;
+    height: 100px;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: 550;
+}
+
+span {
+    margin-top: 10px; 
+}
+
+p + span {
+    font-weight: 550;
+}
