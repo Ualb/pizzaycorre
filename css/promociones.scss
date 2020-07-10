@@ -27,6 +27,7 @@
 }
 .breadcrumb-item + .breadcrumb-item::before { 
     content: ">";
+    padding: 0 8px 0 5px;
 }
 
 .busqueda {
@@ -78,4 +79,31 @@ section {
             font-weight: 600 !important;
         }
     }
-} 
+}
+
+.top {
+    margin-top: 8px;
+}
+
+.ajust {
+    margin-left: 10px;
+}
+
+.float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:20px;
+	right:20px;
+	background-color:#f9b826;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: 2px 2px 3px #999;
+    margin-bottom: 16vh;
+    margin-right: 10px;
+}
+
+.my-float{
+	margin-top:12px;
+}
