@@ -13,13 +13,24 @@
 
     <!--Dependencias generales-->
     <link rel="stylesheet" href="../../../css/general.css">
-    <link rel="stylesheet" href="../../../css/user-admin.css">
+
 
     <!--Dependencias locales-->
+    <style>
+        .header {
+            color: #A80E0E;
+            font-size: 27px;
+            padding: 10px;
+        }
+
+        .bigicon {
+            font-size: 35px;
+            color: #FFAA00;
+        }
+    </style>
 
 
-
-    <title>Pizza y Corre | Administración de usuario</title>
+    <title>Pizza y Corre | Acerca de nosotros</title>
 </head>
 
 <body>
@@ -61,76 +72,70 @@
 
     <!--Principal-->
     <main>
-        <div class="row">
-            <section class="col-lg-4">
-                <article id="user-menu">
-                    <ul>
-                        <li><a href="#"><i class="fas fa-receipt"></i> Mis órdenes</a></li>
-                        <li class="active"><a href="#"><i class="fas fa-user"></i> Información Personal</a></li>
-                        <li><a href="#"><i class="fas fa-map-marked-alt"></i> Gestionar Direcciones</a></li>
-                    </ul>
-                </article>
-            </section>
-            <section class="col-lg-8 mt-4">
-                <div id="user-main">
-                    <section class="col-12">
-                        <h1 class="text-center">Editar datos de usuario</h1>
-                        <form action="#" method="POST" class="needs-validation" onsubmit="return validateForm()"
-                            enctype="multipart/form-data">
-                            <div class="row mb-5">
-                                <div class="col-md-8 col-12" style="padding: 0 3em; margin-top: 2em;">
-                                    <h6>Datos del Usuario</h6>
-                                    <hr>
-                                    <div id="form-user">
-                                        <div class="form-group">
-                                            <input type="text" name="nombre" id="nombre" placeholder="Nombres"
-                                                class="form-control">
-                                            <div class="invalid-feedback">Nombre Obligatorio</div>
-                                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="post">
+                            <fieldset>
+                                <legend class="text-center header">Contactenos</legend>
 
-                                        <div class="form-group">
-                                            <input type="text" name="apellido" id="apellido" placeholder="Apellidos"
-                                                class="form-control">
-                                            <div class="invalid-feedback">Apellidos Obligatorio</div>
-                                        </div>
-                                        <div class="form-group">
-                                            <select name="gend" id="gend" class="form-control">
-                                                <option value="0" disabled selected>Sexo</option>
-                                                <option value="Male">Masculino</option>
-                                                <option value="Female">Femenino</option>
-                                                <option value="LGTB">Prefiero no decirlo</option>
-                                            </select>
-                                            <div class="invalid-feedback">Requerido</div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" name="correo" id="correo"
-                                                placeholder="Correo electrónico" class="form-control">
-                                            <div class="invalid-feedback">Correo inválido (debe ser de formato
-                                                pepito@mail.com)</div>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="tel" name="tel" id="tel" placeholder="Telefono"
-                                                class="form-control not-req">
-                                        </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="Nombres"
+                                            class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-12" style="margin-top: 2em;">
-                                    <h6>Foto (Opcional)</h6>
-                                    <div class="form-group">
-                                        <input type="file" name="photo" id="photo-form" class="form-control-file">
-                                        <div id="avatar-container">
-                                            <img src="../../../img/avatar.jpg" alt="" id="avatar" class="img-thumbnail">
-                                        </div>
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Apellidos"
+                                            class="form-control">
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-block btn-danger">Editar</button>
-                            </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fas fa-envelope bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Correo"
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="phone" type="text" placeholder="Teléfono"
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i
+                                            class="fas fa-pen-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Ingrese su mensaje, le será contestado lo mas breve posible."
+                                            rows="7"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-warning btn-lg">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </form>
-                    </section>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
-
     </main>
 
     <!--Footer-->
@@ -138,7 +143,7 @@
         <section class="row" id="info-caract">
             <article class="col-md-6 col-lg-3">
                 <div class="footer-card">
-                    <img src="../../img/delivery.svg" alt="">
+                    <img src="../../../img/delivery.svg" alt="">
                     <h4>Envío Gratis en tu Primera Orden</h4>
                     <hr>
                     <p>Regístrese para obtener actualizaciones y tu primer envío es gratis.</p>
@@ -146,7 +151,7 @@
             </article>
             <article class="col-md-6 col-lg-3">
                 <div class="footer-card">
-                    <img src="../../img/tiempo.svg" alt="">
+                    <img src="../../../img/tiempo.svg" alt="">
                     <h4>Envío en 30 minutos</h4>
                     <hr>
                     <p>Todo lo que pidas será entregado rápidamente hasta tu puerta.</p>
@@ -154,7 +159,7 @@
             </article>
             <article class="col-md-6 col-lg-3">
                 <div class="footer-card">
-                    <img src="../../img/pizza.svg" alt="">
+                    <img src="../../../img/pizza.svg" alt="">
                     <h4>Garantizamos la calidad</h4>
                     <hr>
                     <p>Utilizamos los mejores ingredientes para cocinar la mejor comida para usted.</p>
@@ -162,7 +167,7 @@
             </article>
             <article class="col-md-6 col-lg-3">
                 <div class="footer-card">
-                    <img src="../../img/variedad.svg" alt="">
+                    <img src="../../../img/variedad.svg" alt="">
                     <h4>Variedad de platillos</h4>
                     <hr>
                     <p>En nuestro menú encontrará una gran variedad de platos y bebidas.</p>
@@ -189,14 +194,13 @@
                         </div>
                     </div>
                     <div class="social">
-                        <div class="social-icon"><a href="https://es-la.facebook.com/PizzaYCorreNic/"><i
-                                    class="fab fa-facebook"></i></a>
+                        <div class="social-icon"><a href="#"><i class="fab fa-facebook"></i></a>
                         </div>
                         <div class="social-icon"><a href="#">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
-                        <div class="social-icon"><a href="https://www.instagram.com/pizzaycorrenicaragua/">
+                        <div class="social-icon"><a href="#">
                                 <i class="fab fa-instagram"></i>
                             </a></div>
                     </div>
@@ -210,18 +214,18 @@
         </section>
         <section class="row" id="info-footer">
             <article class="col-md-4 footer-card">
-                <img id="logo" src="../../img/main-logo.svg" alt="">
+                <img id="logo" src="../../../img/main-logo.svg" alt="">
                 <p>Somos un emprendimiento 100% nicaragüense enfocado en brindar la mejor pizza artesanal a nuestros
                     clientes hasta la puerta de su casa con toda comodidad.</p>
-                <img id="cards" src="../../img/cards.png" alt="">
+                <img id="cards" src="../../../img/cards.png" alt="">
             </article>
             <article class="col-md-4 footer-card">
                 <h5>Enlaces útiles</h5>
                 <hr>
                 <ul>
-                    <li><a href="../other/about.html">Sobre nosotros</a></li>
-                    <li><a href="../menu/menu.html">Menú</a></li>
-                    <li><a href="../other/contact.html">Contactanos</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Menú</a></li>
+                    <li><a href="#">Contactanos</a></li>
                 </ul>
             </article>
             <article class="col-md-4 footer-card">
@@ -236,40 +240,6 @@
 
     <!--Scripts-->
     <script src="../../../js/main.js"></script>
-    <script src="../../../js/signup-avatar.js"></script>
-    <script>
-        /**
-         * Valida el envío del formulario
-         */
-        function validateForm() {
-            let fl = true;
-            console.log("ONVALIDATE");
-            document.querySelectorAll("#form-user input").forEach(elem => {
-                if (!elem.classList.contains("not-req")) {
-                    if (elem.value == "" || !elem.checkValidity()) {
-                        fl = false;
-                        elem.classList.add("is-invalid");
-                    } else {
-                        elem.classList.remove("is-invalid");
-                    }
-                }
-            });
-
-            document.querySelectorAll("#form-user select").forEach(elem => {
-                console.log(elem.id);
-                if (!elem.classList.contains("not-req")) {
-                    if (elem.value == "0" || !elem.checkValidity()) {
-                        fl = false;
-                        elem.classList.add("is-invalid");
-                    } else {
-                        elem.classList.remove("is-invalid");
-                    }
-                }
-            });
-
-            return fl;
-        }
-    </script>
 </body>
 
 </html>
