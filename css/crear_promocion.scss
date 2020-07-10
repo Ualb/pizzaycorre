@@ -14,43 +14,26 @@ $gray:grayscale($color: #eceaea);
 /*body*/
 body {
     font-family: 'Montserrat', sans-serif;
-<<<<<<< HEAD
-    background-color: grayscale($color: #eceaea) ;
-=======
     background-color: $gray;
->>>>>>> promocion
 }
-
-/*Barra lateral*/
-
-.sidebar-sticky{
-    display: block;
-   background-color: $mustard;
-   
-   position: sticky;
-   top: 0;
-   height: calc(100vh -40px);
-   overflow-x: hidden;
-   overflow-y: auto;
-   width: 188.5px;
-   height: 617px;
-    .nav-item{
-        padding: 3%;
-        &:hover{
-            cursor: pointer;
-            background-color: $lg-mustard;
-        }
-
-        .nav-link{
-            color: #fff;
-            font-weight: 400;
-            font-size: 14px;
-
-        }
-        
+.search-bar{
+    
+    justify-content: left !important;
+    background-position: left !important;
+    background-color: white !important;
+ 
+    width: 50%;
+    
+    .size
+    {
+      width: 300px !important;   
+      font-size: 14px !important;
+      font-weight: 400 !important;
     }
+
+    
+
 }
-/*MAIN*/
 
 .breadcrumb{
     font-size: 15px !important;
@@ -76,10 +59,16 @@ body {
     content: ">";
 }
 
+.busqueda{
+    width: 40% !important;
+}
 h1{
     margin-left: 3rem;
 }
 
+.row{
+    margin-left: 3rem;
+}
 section{
     padding: 25px 4.5%;
     .form-group{
@@ -98,7 +87,6 @@ section{
 
     }
 
-<<<<<<< HEAD
     .spacing{
         padding-top: 1rem;
         .custom-select{
@@ -129,80 +117,4 @@ section{
     }
 }
     
-=======
-/*Promociones*/
-/*1. Principal*/
-.master {
-    background: rgb(240, 240, 247);
 }
-.breadcrumb{
-    font-size: 15px !important;
-    font-weight: 400 !important;
-    text-transform: none !important;
-   margin-top: 3rem;
-    background-color: white;
-   .breadcrumb-item{
-       a{
-           color: $black;
-       }
-    color: $black !important;
-   }
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    display: inline-block;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    color: $black;
-    content: ">";
-} 
-
-
-.my-img {
-    width: 100px; 
-    margin-top: 18px;
-}
-
-h2 {
-    font-weight: 500;
-    font-size: 22px;
-}
-
-.card { 
-    margin: 10px auto;
-    background: white;
-    height: 100px;
-}
-
-p {
-    margin-top: 5px;
-    font-weight: 550;
-}
-
-span {
-    font-weight: 300;
-    font-size: 12px;
-}
-
-p + span {
-    font-weight: 550;
-}
-
-.Title{
-    font-weight: 600;
-    font-style: $black ;
-    font-size: 14px;
-}
-
-.ajustar{
-    padding-left: 5.5rem;
->>>>>>> promocion
-}
-
-
-@media (min-width: 768px) {
-    .sidebar-sticky {
-        position: sticky;
-        top: 0;
-        z-index: 999;
-    }}
